@@ -37,8 +37,16 @@
 
 const char *ifn = "wlan1";
 
-
 pcap_dumper_t *filedumper = NULL;
+
+struct libwifi_radiotap_info rtap_info = {0};
+rtap_info.present = 0x0000002e;     // Flags, Rate, Channel, dBm Ant Signal
+rtap_info.channel.flags = 0x00a0;   // CCK, 2.4GHz (for channel 1)
+rtap_info.channel.freq = 2412;      // Channel 1 (2.4GHz)
+rtap_info.flags = 0x0000;           // No flags
+rtap_info.rate = 1;                 // 1 Mbit
+rtap_info.rate_raw = rtap_info.rate * 2; // 500kb/s increments
+rtap_info.signal = -20;             // Signal strength in dBm
 
  
 int get_if_index(const char *ifname) {
@@ -116,6 +124,14 @@ void create_beacon(struct libwifi_beacon *refbeacon) {
 }
 
 void check_beacon(const unsigned char *packet, int len) {
+	// print packet content
+	printf("checking packet...\n");
+	printf("packet content:");
+	for(int i=0; i<buf_len; i++){
+			printf("%c", packet[i]);
+		}
+	printf("\n");
+
     if (len < 24) {  // Minimum beacon frame size
         printf("Packet too short to be a beacon.\n");
         return;
@@ -230,52 +246,82 @@ void check_beacon(const unsigned char *packet, int len) {
 int main()
 {
 
+	// create beacon frame
 	struct libwifi_beacon beacon = {0};
 	create_beacon(&beacon);
-
 	size_t buf_len = libwifi_get_beacon_length(&beacon);
-
-	unsigned char *sendbuff;
-	sendbuff=(unsigned char*)malloc(buf_len);
-	if (sendbuff == NULL){
-		printf("error allocate buffer");
-	}
+	
+	// copy beacon frame into buffer
+	char *sendbuff = malloc(buf_len);
+	if (sendbuff == NULL){ printf("error allocate buffer"); }
 	memset(sendbuff,0,buf_len);
 	libwifi_dump_beacon(&beacon, sendbuff, buf_len);
 
-	printf("checking packet...\n");
+	// check packet
 	check_beacon(sendbuff, buf_len);
 
-	for(int i=0; i<buf_len; i++){
-		printf("%c", sendbuff[i]);
+
+	// create radiotap
+	char *rtap = malloc(LIBWIFI_MAX_RADIOTAP_LEN);
+	if (rtap == NULL){ printf("error allocate rtap"); }
+	memset(rtap,0,LIBWIFI_MAX_RADIOTAP_LEN);
+	
+	int rtap_len = libwifi_create_radiotap(&rtap_info, rtap);
+	if (rtap_len == -1) {
+		 fprintf(stderr, "Error generating radiotap header\n");
+		 free(rtap);
+		 free(sendbuff);
+		 exit(EXIT_FAILURE);
 	}
-	printf("\n");
+
+	// combine radiotap and beacon frame
+	size_t total_len = rtap_len + buf_len;
+	unsigned char *frame = malloc(total_len);
+	if (frame == NULL) {
+		perror("malloc failed");
+		free(rtap);
+		free(sendbuff);
+		exit(EXIT_FAILURE);
+	}
+	memcpy(frame, rtap, rtap_len);
+	memcpy(frame + rtap_len, sendbuff, buf_len);
 
 
-	// opening a handle
-	printf("sending packets...\n");
-	pcap_t *handle = NULL;
+	// open a pcap handle
 	char errbuf[PCAP_ERRBUF_SIZE] = {0};
-    	handle = pcap_open_live(ifn, BUFSIZ, 1, 1000, errbuf);
-
-	// check datalink type
-	int dlt = pcap_datalink(handle);
-	printf("Data Link Type: %s\n", pcap_datalink_val_to_name(dlt));
-
+	pcap_t *handle = pcap_open_live(ifn, BUFSIZ, 1, 1000, errbuf);
 	if (handle == NULL) {
 		fprintf(stderr, "Error opening device %s: %s\n", ifn, errbuf);
 		return -1;
 	}
+
+	// check datalink type
+	int dlt = pcap_datalink(handle);
+	printf("Data Link Type: %s\n", pcap_datalink_val_to_name(dlt));
+	if (dlt != DLT_IEEE802_11_RADIO) {
+    fprintf(stderr, "Warning: Expected DLT_IEEE802_11_RADIO, got %s\n", pcap_datalink_val_to_name(dlt));
+    }
+
+	// send packet
+	printf("sending packets on %s...\n", ifn);
 	while (1){
-		if (pcap_sendpacket(handle, sendbuff, buf_len) != 0) {
+		if (pcap_sendpacket(handle, frame, total_len) != 0) {
 			fprintf(stderr, "Error sending packet: %s\n", pcap_geterr(handle));
+			pcap_close(handle);
+			free(rtap);
+			free(sendbuff);
+			free(frame);
 			return -1;
 		}
 		
 		usleep(200 * 1000);
 
 	}
-    	pcap_close(handle);
-	return 0;
 
+  pcap_close(handle);
+	free(rtap);
+	free(sendbuff);
+	free(frame);
+	
+	return 0;
 }
