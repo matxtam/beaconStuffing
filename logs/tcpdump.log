@@ -1,0 +1,1001 @@
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlan1, link-type IEEE802_11_RADIO (802.11 plus radiotap header), snapshot length 262144 bytes
+23:22:00.110248 393774610us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.127090 393791523us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.148037 393812478us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.212594 393877011us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.229603 393894024us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.315005 393979421us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.331903 393996323us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.352926 394017279us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.417449 394081822us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.434453 394098871us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.455262 394119680us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.519790 394184205us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.557672 394222089us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.622212 394286605us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.660068 394324483us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.724589 394388997us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.826989 394491407us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.929479 394593808us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.946312 394610725us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:00.967276 394631689us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.031797 394696200us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.048713 394713126us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.134288 394798610us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.151110 394815526us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.236589 394901001us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.253510 394917927us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.274480 394938898us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.339009 395003420us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.358870 395023222us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.376919 395041302us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.441428 395105830us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.458312 395122727us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.543792 395208204us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.560711 395225128us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.581711 395246103us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.646222 395310632us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.663111 395327527us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.748599 395413005us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.765527 395429928us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.851099 395515424us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.867933 395532328us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.888899 395553309us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.953395 395617807us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.970317 395634728us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:01.991290 395655706us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.055897 395720217us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.072863 395737128us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.158247 395822618us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.175090 395839529us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.196074 395860512us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.260592 395925010us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.277505 395941929us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.288226 395952646us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Probe Request () [1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 Mbit]
+23:22:02.290569 395954989us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.292960 395957385us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.295382 395959807us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.297771 395962194us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.300196 395964621us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.302613 395967035us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.311358 395975773us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.329271 395993677us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.332672 395997070us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.335976 396000394us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.336910 396001329us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Probe Request () [1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 Mbit]
+23:22:02.339263 396003680us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.339573 396003994us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:02.342982 396007396us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:02.345661 396010044us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:02.363095 396027429us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.379930 396044329us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.400906 396065316us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.411867 396076265us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:02.418251 396082669us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:02.503303 396167722us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.567973 396232384us tsft 1.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.584784 396249130us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.605715 396270121us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.670320 396334640us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.772683 396437023us tsft 1.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.789520 396453931us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.875115 396539415us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.891955 396556331us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.912925 396577329us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.977419 396641825us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:02.994320 396658732us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.079839 396744226us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.096742 396761132us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.182257 396846644us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.220132 396884533us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.284610 396949018us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.301520 396965933us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.322526 396986935us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.387095 397051419us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.403926 397068333us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.424868 397089274us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.489419 397153829us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.498718 397163121us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:03.506322 397170733us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.527261 397191671us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.591852 397256239us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.608728 397273134us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.629663 397294070us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.694221 397358631us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.711155 397375556us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.732068 397396474us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.796635 397461041us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.813520 397477934us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.834468 397498876us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.899104 397563423us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.916472 397580879us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:03.936872 397601279us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.001456 397665851us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.018345 397682735us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.103857 397768234us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.120729 397785135us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.206229 397870626us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.223134 397887536us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.244079 397908484us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.308636 397973045us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.346482 398010888us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.411109 398075428us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.427998 398092404us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.448878 398113283us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.513444 398177846us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.530337 398194736us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.551286 398215689us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.615846 398280238us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.632731 398297137us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.653684 398318092us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.718253 398382648us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.735136 398399536us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.756087 398420493us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.820657 398485040us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.837604 398502011us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.858571 398522892us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.919258 398583637us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:04.922021 398586417us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:04.924776 398589182us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.927158 398591569us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:04.929555 398593964us tsft 1.0 Mb/s 2412 MHz 11b -64dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:04.933804 398598211us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:04.937247 398601658us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:04.939925 398604337us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.944827 398609235us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:04.950658 398615065us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:04.954389 398618795us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:04.961961 398626369us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:04.976683 398641092us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:04.979252 398643664us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:04.982196 398646603us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:04.984615 398649025us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:05.025485 398689860us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.043151 398707553us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.072049 398736452us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.127855 398792243us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.144736 398809139us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.165692 398830098us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.230248 398894643us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.247229 398911634us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.268093 398932500us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.332663 398997053us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.349552 399013940us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.370556 399034899us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.435055 399099436us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.452063 399116470us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.472898 399137304us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.537461 399201864us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.554345 399218739us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.575300 399239704us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.639853 399304238us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.656736 399321140us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.677954 399342359us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.742342 399406666us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.759127 399423540us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.780098 399444507us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.844699 399509058us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.845574 399509977us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Data IV:312606 Pad 20 KeyID 1
+23:22:05.846485 399510894us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Data IV:322606 Pad 20 KeyID 1
+23:22:05.861599 399525940us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.882530 399546913us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.947064 399611459us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.963939 399628341us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:05.984906 399649312us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.049485 399713869us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.066445 399730851us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.087337 399751719us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.151883 399816252us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.168857 399833273us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.254289 399918670us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.271171 399935574us tsft 1.0 Mb/s 2412 MHz 11b -70dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.292118 399956521us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.356775 400021071us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.459117 400123463us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.475943 400140342us tsft 1.0 Mb/s 2412 MHz 11b -70dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.496918 400161320us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.561464 400225846us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.599348 400263720us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.630630  [|802.11_radio]
+23:22:06.663874 400328256us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.680747 400345143us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.701725 400366121us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.766258 400430648us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.804130 400468527us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.816906 400481304us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Request () [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit]
+23:22:06.817672 400482078us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Request () [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit]
+23:22:06.819997 400484402us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.820309 400484716us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:06.823728 400488128us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.827180 400491582us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.827488 400491896us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Acknowledgment RA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:06.829809 400494215us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Acknowledgment RA:40:ee:15:a8:f1:98 (oui Unknown) 
+23:22:06.832105 400496513us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Acknowledgment RA:40:ee:15:a8:f1:98 (oui Unknown) 
+23:22:06.839464 400503870us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Acknowledgment RA:1a:7d:e0:e2:62:c9 (oui Unknown) 
+23:22:06.840634 400505039us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Probe Request () [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:06.843598 400508001us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.843911 400508317us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:06.854170 400518484us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Acknowledgment RA:1a:7d:e0:e2:62:c9 (oui Unknown) 
+23:22:06.861518 400525872us tsft 1.0 Mb/s 2412 MHz 11b -64dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:06.868705 400533075us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.886207 400550589us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:06.901866 400566263us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Probe Request () [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:06.905345 400569738us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.905647 400570054us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Acknowledgment RA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:06.908296 400572704us tsft 1.0 Mb/s 2412 MHz 11b -61dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:06.911033 400575438us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:06.914865 400579272us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Acknowledgment RA:8a:d5:a8:8f:b2:b2 (oui Unknown) 
+23:22:06.924894 400589296us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.928366 400592768us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.930701 400595103us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.933079 400597480us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.938144 400602549us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.940568 400604971us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:06.971086 400635476us tsft 1.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.008940 400673327us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.073593 400737859us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.090371 400754745us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.111341 400775732us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.130770  [|802.11_radio]
+23:22:07.175868 400840251us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.178682 400843083us tsft 11.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Acknowledgment RA:fa:4f:f5:c7:87:78 (oui Unknown) 
+23:22:07.178975 400843381us tsft 24.0 Mb/s 2412 MHz 11g -49dBm signal [bit 22] Request-To-Send TA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:07.179144 400843513us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d28 Pad 20 KeyID 0
+23:22:07.179157 400843534us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d29 Pad 20 KeyID 0
+23:22:07.179240 400843642us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d2b Pad 20 KeyID 0
+23:22:07.179372 400843729us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d2d Pad 20 KeyID 0
+23:22:07.179381 400843772us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d2e Pad 20 KeyID 0
+23:22:07.179553 400843808us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d2f Pad 20 KeyID 0
+23:22:07.179560 400843830us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d30 Pad 20 KeyID 0
+23:22:07.179566 400843852us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d31 Pad 20 KeyID 0
+23:22:07.179572 400843866us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d32 Pad 20 KeyID 0
+23:22:07.179578 400843909us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d33 Pad 20 KeyID 0
+23:22:07.179585 400843952us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d34 Pad 20 KeyID 0
+23:22:07.179618 400843974us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d35 Pad 20 KeyID 0
+23:22:07.179810 400844215us tsft 24.0 Mb/s 2412 MHz 11g -49dBm signal [bit 22] Request-To-Send TA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:07.180016 400844376us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d37 Pad 20 KeyID 0
+23:22:07.180026 400844398us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d38 Pad 20 KeyID 0
+23:22:07.180101 400844434us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d39 Pad 20 KeyID 0
+23:22:07.180111 400844499us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d3b Pad 20 KeyID 0
+23:22:07.180273 400844534us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d3c Pad 20 KeyID 0
+23:22:07.180284 400844556us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d3d Pad 20 KeyID 0
+23:22:07.180291 400844585us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d3e Pad 20 KeyID 0
+23:22:07.180298 400844614us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d3f Pad 20 KeyID 0
+23:22:07.180319 400844649us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d40 Pad 20 KeyID 0
+23:22:07.180364 400844700us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d41 Pad 20 KeyID 0
+23:22:07.180373 400844758us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d42 Pad 20 KeyID 0
+23:22:07.192812 400857210us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.196710 400861113us tsft 11.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Acknowledgment RA:fa:4f:f5:c7:87:78 (oui Unknown) 
+23:22:07.213742 400878134us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.278332 400942670us tsft 1.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.316144 400980536us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.380912 401045206us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.418546 401082940us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.483069 401147454us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.499950 401164346us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.520937 401185334us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.585466 401249864us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.602370 401266746us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.623348 401287742us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.630902  [|802.11_radio]
+23:22:07.643342 401307725us tsft 6.0 Mb/s 2412 MHz 11g -68dBm signal [bit 22] Request-To-Send TA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:07.643374 401307786us tsft 6.0 Mb/s 2412 MHz 11g -68dBm signal [bit 22] Clear-To-Send RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:07.643531 401307934us tsft 6.0 Mb/s 2412 MHz 11g -68dBm signal [bit 22] Acknowledgment RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:07.644739 401309138us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Authentication (Open System)-2: 
+23:22:07.645049 401309452us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:07.647395 401311800us tsft 6.0 Mb/s 2412 MHz 11g -68dBm signal [bit 22] Request-To-Send TA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:07.647452 401311860us tsft 6.0 Mb/s 2412 MHz 11g -68dBm signal [bit 22] Clear-To-Send RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:07.647690 401312092us tsft 6.0 Mb/s 2412 MHz 11g -67dBm signal [bit 22] Assoc Request (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit]
+23:22:07.647732 401312152us tsft 6.0 Mb/s 2412 MHz 11g -69dBm signal [bit 22] Acknowledgment RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:07.650076 401314474us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Assoc Response AID(1) : PRIVACY : Successful
+23:22:07.650384 401314788us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:07.687898 401352282us tsft 1.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.704763 401369147us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.725747 401390139us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.778990 401443390us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] EAPOL key (3) v2, len 95
+23:22:07.779301 401443704us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:07.784573 401448975us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:07.790277 401454665us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.807151 401471547us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.824197 401488599us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:07.825176 401489582us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Request-To-Send TA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:07.825491 401489897us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Clear-To-Send RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:07.909641 401573947us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:07.995072 401659467us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.011962 401676348us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.032960 401697347us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.097512 401761868us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.114481 401778874us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.131035  [|802.11_radio]
+23:22:08.135355 401799751us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.182538 401846939us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Request-To-Send TA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.182849 401847253us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Clear-To-Send RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.183350 401847751us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Action (48:e7:da:bc:d4:91 (oui Unknown)): BA ADDBA Request
+23:22:08.183661 401848065us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Acknowledgment RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.184528 401848931us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Action (ec:17:2f:e7:86:70 (oui Unknown)): BA ADDBA Response
+23:22:08.184839 401849245us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:08.186127 401850533us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Request-To-Send TA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.186442 401850847us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Clear-To-Send RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.186851 401851255us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Request-To-Send TA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.187164 401851569us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Clear-To-Send RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.187560 401851963us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] BAR RA:ec:17:2f:e7:86:70 (oui Unknown) TA:48:e7:da:bc:d4:91 (oui Unknown) CTL(4) SEQ(256) 
+23:22:08.188414 401852818us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Request-To-Send TA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.188730 401853132us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Clear-To-Send RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.189226 401853630us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Action (48:e7:da:bc:d4:91 (oui Unknown)): BA ADDBA Response
+23:22:08.189539 401853944us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Acknowledgment RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:08.216751 401881148us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.237750 401902146us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.302308 401966669us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.319154 401983548us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.340164 402004554us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.404764 402069070us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.421552 402085948us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.507074 402171462us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.544961 402209358us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.609502 402273872us tsft 1.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.626364 402290749us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.631165  [|802.11_radio]
+23:22:08.647371 402311762us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.711879 402376273us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.728754 402393149us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.814374 402478768us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.831152 402495551us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.852163 402516560us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.917129 402581440us tsft 1.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.933559 402597950us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:08.954568 402618968us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.036238 402700599us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.121524 402785894us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.131287  [|802.11_radio]
+23:22:09.138370 402802763us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.159369 402823764us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.223900 402888295us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.226728 402891127us tsft 11.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Acknowledgment RA:fa:4f:f5:c7:87:78 (oui Unknown) 
+23:22:09.226799 402891202us tsft 24.0 Mb/s 2412 MHz 11g -49dBm signal [bit 22] Request-To-Send TA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:09.227032 402891421us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d43 Pad 20 KeyID 0
+23:22:09.227185 402891529us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d44 Pad 20 KeyID 0
+23:22:09.227194 402891551us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d45 Pad 20 KeyID 0
+23:22:09.227200 402891579us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d46 Pad 20 KeyID 0
+23:22:09.227296 402891687us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d47 Pad 20 KeyID 0
+23:22:09.227443 402891795us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d48 Pad 20 KeyID 0
+23:22:09.227451 402891824us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d49 Pad 20 KeyID 0
+23:22:09.227482 402891860us tsft 2412 MHz 11n -52dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:d4a Pad 20 KeyID 0
+23:22:09.240898 402905298us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.243609 402908013us tsft 11.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Acknowledgment RA:fa:4f:f5:c7:87:78 (oui Unknown) 
+23:22:09.261851 402926245us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.326299 402990687us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.343155 403007551us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.428797 403093097us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.445563 403109952us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.466593 403130970us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.531089 403195479us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.568978 403233372us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.631418  [|802.11_radio]
+23:22:09.633506 403297871us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.650446 403314838us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.671401 403335795us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.735887 403400281us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.752757 403417153us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.773779 403438172us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.838284 403502673us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.855158 403519553us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.876254 403540581us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.940728 403605083us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.957563 403621953us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:09.978528 403642918us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.043223 403707599us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.049182 403713580us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Action (ec:17:2f:e7:86:70 (oui Unknown)): BA ADDBA Request
+23:22:10.049500 403713894us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:10.049876 403714275us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Request-To-Send TA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:10.050190 403714589us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Clear-To-Send RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:10.050687 403715087us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Action (48:e7:da:bc:d4:91 (oui Unknown)): BA ADDBA Response
+23:22:10.051002 403715402us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Acknowledgment RA:48:e7:da:bc:d4:91 (oui Unknown) 
+23:22:10.059958 403724354us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.080926 403745321us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.131542  [|802.11_radio]
+23:22:10.145523 403809875us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.162362 403826754us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.183322 403847715us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.248307 403912698us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.310608 403974992us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:10.350314 404014704us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.388217 404052523us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.452699 404117078us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.469565 404133955us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.490529 404154924us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.555102 404219488us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.571963 404236356us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.631671  [|802.11_radio]
+23:22:10.657527 404321889us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.675831 404340220us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.695340 404359731us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.776761 404441156us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.797734 404462127us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.862409 404526690us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.882878 404547228us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.964733 404629109us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:10.981567 404645957us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.067118 404731492us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.084014 404748403us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.131801  [|802.11_radio]
+23:22:11.169528 404833884us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.186367 404850758us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.269298 404933687us tsft 1.0 Mb/s 2412 MHz 11b -54dBm signal [bit 22] Probe Request () [1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 Mbit]
+23:22:11.272067 404936461us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.274394 404938784us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:11.277800 404942187us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:11.278104 404942500us tsft 1.0 Mb/s 2412 MHz 11b -54dBm signal [bit 22] Acknowledgment RA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:11.285250 404949641us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:11.286582 404950978us tsft 11.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Acknowledgment RA:fa:4f:f5:c7:87:78 (oui Unknown) 
+23:22:11.286766 404951163us tsft 24.0 Mb/s 2412 MHz 11g -49dBm signal [bit 22] Request-To-Send TA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:11.289262 404953652us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.290540 404954935us tsft 11.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Data IV: ae Pad 20 KeyID 2
+23:22:11.303507 404967901us tsft 11.0 Mb/s 2412 MHz 11b -46dBm signal [bit 22] Acknowledgment RA:fa:4f:f5:c7:87:78 (oui Unknown) 
+23:22:11.306676 404971073us tsft 1.0 Mb/s 2412 MHz 11b -54dBm signal [bit 22] Probe Request () [1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 Mbit]
+23:22:11.310156 404974549us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:11.310466 404974862us tsft 1.0 Mb/s 2412 MHz 11b -55dBm signal [bit 22] Acknowledgment RA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:11.315979 404980369us tsft 1.0 Mb/s 2412 MHz 11b -54dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:11.322678 404987074us tsft 1.0 Mb/s 2412 MHz 11b -55dBm signal [bit 22] Acknowledgment RA:3c:cd:57:ec:aa:85 (oui Unknown) 
+23:22:11.327857 404992249us tsft 1.0 Mb/s 2412 MHz 11b -54dBm signal [bit 22] Acknowledgment RA:3c:cd:57:ec:aa:85 (oui Unknown) 
+23:22:11.331219 404995609us tsft 1.0 Mb/s 2412 MHz 11b -54dBm signal [bit 22] Acknowledgment RA:3c:cd:57:ec:aa:85 (oui Unknown) 
+23:22:11.350359 405014747us tsft 1.0 Mb/s 2412 MHz 11b -55dBm signal [bit 22] Probe Request () [1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 Mbit]
+23:22:11.358086 405022477us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:11.374364 405038686us tsft 1.0 Mb/s 2412 MHz 11b -49dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.387781 405052158us tsft 1.0 Mb/s 2412 MHz 11b -55dBm signal [bit 22] Probe Request () [1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 Mbit]
+23:22:11.476727 405141104us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.493571 405157959us tsft 1.0 Mb/s 2412 MHz 11b -70dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.579133 405243514us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.616981 405281347us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.631929  [|802.11_radio]
+23:22:11.681515 405345897us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.719357 405383748us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.783918 405448307us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.821762 405486150us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.886420 405550717us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.924166 405588548us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:11.988717 405653091us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.005582 405669959us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.026555 405690947us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.091126 405755510us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.128992 405793351us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.132055  [|802.11_radio]
+23:22:12.193534 405857920us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.231368 405895756us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.295905 405960294us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.333881 405998269us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.398416 406062722us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.436171 406100557us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.452223 406116608us tsft 5.5 Mb/s 2412 MHz 11b -33dBm signal [bit 22] Probe Request () [1.0 2.0 5.5 11.0 6.0 9.0 12.0 18.0 Mbit]
+23:22:12.455719 406120103us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:12.456027 406120419us tsft 1.0 Mb/s 2412 MHz 11b -27dBm signal [bit 22] Acknowledgment RA:5c:92:5e:37:01:e4 (oui Unknown) 
+23:22:12.458381 406122770us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:12.458693 406123085us tsft 1.0 Mb/s 2412 MHz 11b -27dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:12.500746 406165123us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.538581 406202962us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.620158 406284535us tsft 1.0 Mb/s 2412 MHz 11b -70dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.632183  [|802.11_radio]
+23:22:12.705536 406369916us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.743380 406407766us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.807941 406472317us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.824781 406489162us tsft 1.0 Mb/s 2412 MHz 11b -70dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:12.845779 406510165us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.012829 406677127us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.050586 406714964us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.115249 406779528us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.131981 406796363us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.132312  [|802.11_radio]
+23:22:13.255394 406919773us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.319917 406984303us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.357788 407022173us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.422392 407086713us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.461395 407125784us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:13.463813 407128206us tsft 1.0 Mb/s 2412 MHz 11b -70dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:13.469434 407133827us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.474066 407138456us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:13.512009 407176399us tsft 1.0 Mb/s 2412 MHz 11b -60dBm signal [bit 22] Probe Request (ntu_peap) [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:13.516487 407180883us tsft 1.0 Mb/s 2412 MHz 11b -60dBm signal [bit 22] Probe Request (ntu_peap) [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:13.524737 407189123us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.562591 407226978us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.572072 407236458us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.573108 407237495us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.575325 407239714us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.577354 407241741us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.579414 407243804us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.587934 407252323us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.597094 407261476us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.598306 407262693us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.599530 407263919us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.600485 407264875us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.603096 407267487us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.607171 407271557us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.610121 407274510us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.614510 407278893us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.615900 407280290us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.617282 407281669us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.621850 407286236us tsft 1.0 Mb/s 2412 MHz 11b -59dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.627148 407291533us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.628949 407293337us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.632446  [|802.11_radio]
+23:22:13.646892 407311273us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.651786 407316169us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.654949 407319335us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.656551 407320938us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.658072 407322461us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.664996 407329379us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.674177 407338562us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.684999 407349386us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.690190 407354577us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.693655 407358042us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.695062 407359448us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.696527 407360917us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.698178 407362565us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.705840 407370228us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.716635 407381019us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:13.723343 407387723us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] DeAuthentication (f2:6f:d2:5c:15:7e (oui Unknown)): Unspecified reason
+23:22:13.729539 407393925us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.767412 407431784us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.831936 407496317us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.934384 407598717us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:13.983486 407647863us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Probe Request (ntu_peap) [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:14.017365 407681731us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Probe Request (ntu_peap) [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:14.036727 407701109us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.046411 407710794us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Probe Request (ntu_peap) [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:14.053582 407717966us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.074606 407738987us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.079282 407743664us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Probe Request (ntu_peap) [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:14.111637 407776014us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Probe Request (ntu_peap) [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:14.132570  [|802.11_radio]
+23:22:14.137311 407801693us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Probe Request (ntu_peap) [1.0* 2.0* 5.5* 11.0* Mbit]
+23:22:14.156030 407820415us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.156977 407821362us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.158244 407822632us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.160680 407825036us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.165487 407829871us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.172300 407836684us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.177010 407841390us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.184899 407849287us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.188698 407853082us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.190145 407854533us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.194821 407859205us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.195818 407860205us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.197326 407861710us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.202123 407866509us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.208783 407873169us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.209737 407874125us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.211836 407876224us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.221202 407885575us tsft 1.0 Mb/s 2412 MHz 11b -57dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.224763 407889143us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.236062 407900449us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.238532 407902917us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.241555 407905938us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.244413 407908801us tsft 1.0 Mb/s 2412 MHz 11b -60dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.250201 407914587us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.251353 407915741us tsft 1.0 Mb/s 2412 MHz 11b -58dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.252425 407916814us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.267644 407932029us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.279551 407943932us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.288223 407952605us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.304416 407968801us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.308148 407972532us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.310002 407974383us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.311131 407975518us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.316409 407980793us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.336088 408000472us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.343958 408008339us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.358904 408023289us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.361175 408025560us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.370442 408034771us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] Authentication (Open System)-1: Successful
+23:22:14.371606 408035992us tsft 1.0 Mb/s 2412 MHz 11b -62dBm signal [bit 22] DeAuthentication (f2:6f:d2:5c:15:7e (oui Unknown)): Unspecified reason
+23:22:14.381830 408046192us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.463226 408127567us tsft 1.0 Mb/s 2412 MHz 11b -70dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.484208 408148588us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.548765 408213141us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.565587 408229968us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.586614 408250997us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.632704  [|802.11_radio]
+23:22:14.651156 408315514us tsft 1.0 Mb/s 2412 MHz 11b -48dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.689015 408353395us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.753547 408417924us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.770583 408434963us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.791414 408455795us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.872981 408537294us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.893850 408558199us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.958361 408622726us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:14.975192 408639570us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.060782 408725136us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.077827 408742205us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.098623 408762999us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.132838  [|802.11_radio]
+23:22:15.163148 408827519us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.179989 408844370us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.201029 408865407us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.282390 408946770us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.367970 409032347us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.405896 409070211us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.470375 409134730us tsft 1.0 Mb/s 2412 MHz 11b -48dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.488059 409152441us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.508599 409172976us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.572762 409237140us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.632969  [|802.11_radio]
+23:22:15.675168 409339523us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.691993 409356371us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.713038 409377412us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.777565 409441942us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.794393 409458773us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.815435 409479810us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.896860 409561172us tsft 1.0 Mb/s 2412 MHz 11b -53dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.917838 409582213us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:15.982353 409646726us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.020250 409684619us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.084771 409749135us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.133101  [|802.11_radio]
+23:22:16.204178 409868531us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.289553 409953928us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.306396 409970773us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.306721 409971102us tsft 11.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Data IV: c8 Pad 20 KeyID 2
+23:22:16.307048 409971430us tsft 11.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Data IV: c9 Pad 20 KeyID 2
+23:22:16.392004 410056329us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.408801 410073174us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.429964 410094336us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.532210 410196565us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.596765 410261140us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.633232  [|802.11_radio]
+23:22:16.634599 410298964us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.801583 410465950us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.904049 410568360us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:16.941806 410606173us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.006460 410670734us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.044282 410708571us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.133357  [|802.11_radio]
+23:22:17.146654 410810970us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.211175 410875563us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.227994 410892376us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.249015 410913372us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.351414 411015773us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.416066 411080346us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.432807 411097177us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.453821 411118174us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.518374 411182738us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.535249 411199620us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.556220 411220579us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.616176 411280432us tsft 6.0 Mb/s 2412 MHz 11g -54dBm signal [bit 22] 
+23:22:17.616189 411280492us tsft 6.0 Mb/s 2412 MHz 11g -68dBm signal [bit 22] Acknowledgment RA:4a:fa:91:92:2b:19 (oui Unknown) 
+23:22:17.633490  [|802.11_radio]
+23:22:17.634986 411299345us tsft 6.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Data IV:3008 Pad 20 KeyID 0
+23:22:17.637608 411301978us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.658628 411322984us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.740029 411404378us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.761024 411425382us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.825598 411489968us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.842405 411506778us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.863425 411527784us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.926551 411590850us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:17.929587 411593941us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:17.944808 411609179us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.030421 411694769us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.047240 411711601us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.070280 411734638us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.132841 411797170us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.133626  [|802.11_radio]
+23:22:18.149632 411813979us tsft 1.0 Mb/s 2412 MHz 11b -69dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.170618 411834985us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.235209 411899571us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.252018 411916380us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.354419 412018779us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.375426 412039796us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.457038 412121326us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.477821 412142191us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.559243 412223580us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.587376 412251747us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.633759  [|802.11_radio]
+23:22:18.644829 412309174us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.661629 412325980us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.682627 412346998us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.747199 412411566us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.764025 412428381us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.785298 412449667us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.849619 412513976us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.866413 412530781us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.887525 412551797us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.947511 412611804us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:18.950992 412615345us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] CH: 1, PRIVACY
+23:22:18.953743 412618110us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.968811 412633181us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:18.989832 412654200us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.071241 412735582us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.133900  [|802.11_radio]
+23:22:19.156821 412821152us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.173625 412837982us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.194636 412859002us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.259218 412923580us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.276015 412940382us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.297042 412961411us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.361614 413025971us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.378413 413042783us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.399509 413063810us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.464042 413128363us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.480822 413145183us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.566479 413230782us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.668850 413333174us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.685621 413349984us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.771204 413435557us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.788018 413452384us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.809049 413473416us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.873629 413537985us tsft 1.0 Mb/s 2412 MHz 11b -48dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.890483 413554784us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.911490 413575820us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.976043 413640386us tsft 1.0 Mb/s 2412 MHz 11b -47dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:19.992821 413657185us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.078437 413742777us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.095376 413759744us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.116274 413780618us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.180834 413845178us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.197357 413861713us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:20.204100 413868464us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:20.206522 413870887us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:20.218882 413883248us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.300742 413965092us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.338156 414002488us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:20.385725 414049989us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.423514 414087826us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.504858 414169187us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.528385 414192744us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.590426 414254764us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.607253 414271586us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.628276 414292631us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.692933 414357191us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.709626 414373987us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.730679 414395033us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.812039 414476387us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.833068 414497438us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.897688 414561984us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.914441 414578788us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:20.935473 414599833us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.000040 414664385us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.016920 414681272us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.038194 414702557us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.119261 414783589us tsft 1.0 Mb/s 2412 MHz 11b -65dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.140285 414804642us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.204850 414869196us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.221625 414885988us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.307212 414971570us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.324026 414988389us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.345077 415009439us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.409697 415073980us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.426429 415090789us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.512050 415176381us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.528831 415193190us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.614475 415278790us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.631233 415295589us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.652289 415316649us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.716826 415381173us tsft 1.0 Mb/s 2412 MHz 11b -55dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.733743 415398105us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.836040 415500390us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.857103 415521455us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:21.959561 415623852us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.024054 415688403us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.040832 415705191us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.061908 415726259us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.143255 415807592us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.164307 415828659us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.228826 415893177us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.245629 415909992us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.266717 415931061us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.331216 415995578us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.348031 416012393us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.433684 416097988us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.471521 416135863us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.536051 416200407us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.552832 416217193us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.573917 416238263us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.638464 416302790us tsft 1.0 Mb/s 2412 MHz 11b -48dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.655231 416319593us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.778720 416443062us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.843234 416507591us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.860041 416524394us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.881108 416545468us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.962509 416626794us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:22.983516 416647872us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.048056 416712402us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.085858 416750207us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.141885 416806220us tsft 2412 MHz 11n -56dBm signal 39.0 Mb/s MCS 4 20 MHz long GI [bit 22] Data IV:df0b Pad 20 KeyID 0
+23:22:23.142898 416807257us tsft 6.0 Mb/s 2412 MHz 11g -54dBm signal [bit 22] 
+23:22:23.142941 416807317us tsft 6.0 Mb/s 2412 MHz 11g -67dBm signal [bit 22] Acknowledgment RA:4a:fa:91:92:2b:19 (oui Unknown) 
+23:22:23.150445 416814803us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.167478 416831818us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.173395 416837754us tsft 1.0 Mb/s 2412 MHz 11b -53dBm signal [bit 22] Data IV:df0c Pad 20 KeyID 0
+23:22:23.173707 416838069us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Acknowledgment RA:4a:fa:91:92:2b:19 (oui Unknown) 
+23:22:23.174198 416838562us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.175716 416840078us tsft 2412 MHz 11n -57dBm signal 39.0 Mb/s MCS 4 20 MHz long GI [bit 22] Data IV:df0d Pad 20 KeyID 0
+23:22:23.184223 416848586us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.188252 416852612us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.188557 416852899us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.188909 416853246us tsft 2412 MHz 11n -56dBm signal 39.0 Mb/s MCS 4 20 MHz long GI [bit 22] Data IV:df0f Pad 20 KeyID 0
+23:22:23.189249 416853614us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.191121 416855457us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.191507 416855854us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.191691 416856022us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df10 Pad 20 KeyID 0
+23:22:23.191698 416856043us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df11 Pad 20 KeyID 0
+23:22:23.192425 416856788us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df12 Pad 20 KeyID 0
+23:22:23.193754 416858067us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df13 Pad 20 KeyID 0
+23:22:23.193763 416858100us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df14 Pad 20 KeyID 0
+23:22:23.193884 416858120us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df15 Pad 20 KeyID 0
+23:22:23.193890 416858140us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df16 Pad 20 KeyID 0
+23:22:23.193895 416858159us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df17 Pad 20 KeyID 0
+23:22:23.193900 416858208us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df18 Pad 20 KeyID 0
+23:22:23.193906 416858228us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df19 Pad 20 KeyID 0
+23:22:23.196063 416860426us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.196773 416861133us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.197542 416861892us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df1a Pad 20 KeyID 0
+23:22:23.197574 416861909us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df1b Pad 20 KeyID 0
+23:22:23.200717 416865082us tsft 2412 MHz 11n -57dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df1c Pad 20 KeyID 0
+23:22:23.202598 416866959us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.203583 416867947us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.204632 416868994us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df1d Pad 20 KeyID 0
+23:22:23.205677 416870008us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df1e Pad 20 KeyID 0
+23:22:23.205684 416870025us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df1f Pad 20 KeyID 0
+23:22:23.210165 416874528us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.210647 416875011us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.211163 416875529us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.211553 416875919us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.212232 416876543us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df20 Pad 20 KeyID 0
+23:22:23.212239 416876559us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df21 Pad 20 KeyID 0
+23:22:23.212245 416876572us tsft 2412 MHz 11n -56dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df22 Pad 20 KeyID 0
+23:22:23.244387 416908734us tsft 2412 MHz 11n -57dBm signal 52.0 Mb/s MCS 5 20 MHz long GI [bit 22] Data IV:df23 Pad 20 KeyID 0
+23:22:23.246741 416911098us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.246961 416911325us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.247307 416911673us tsft 24.0 Mb/s 2412 MHz 11g -54dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.247659 416912025us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.253126 416917490us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.253220 416917584us tsft 2412 MHz 11n -57dBm signal 58.5 Mb/s MCS 6 20 MHz long GI [bit 22] Data IV:df26 Pad 20 KeyID 0
+23:22:23.253637 416918002us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.269651 416933994us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.282167 416946525us tsft 2412 MHz 11n -57dBm signal 58.5 Mb/s MCS 6 20 MHz long GI [bit 22] Data IV:df27 Pad 20 KeyID 0
+23:22:23.282357 416946709us tsft 2412 MHz 11n -57dBm signal 58.5 Mb/s MCS 6 20 MHz long GI [bit 22] Data IV:df28 Pad 20 KeyID 0
+23:22:23.282536 416946889us tsft 2412 MHz 11n -57dBm signal 58.5 Mb/s MCS 6 20 MHz long GI [bit 22] Data IV:df29 Pad 20 KeyID 0
+23:22:23.284627 416948992us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.294890 416959249us tsft 2412 MHz 11n -57dBm signal 58.5 Mb/s MCS 6 20 MHz long GI [bit 22] Data IV:df2a Pad 20 KeyID 0
+23:22:23.296596 416960962us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.298010 416962371us tsft 2412 MHz 11n -57dBm signal 58.5 Mb/s MCS 6 20 MHz long GI [bit 22] Data IV:df2b Pad 20 KeyID 0
+23:22:23.310111 416974461us tsft 2412 MHz 11n -57dBm signal 58.5 Mb/s MCS 6 20 MHz long GI [bit 22] Data IV:df2c Pad 20 KeyID 0
+23:22:23.310235 416974589us tsft 2412 MHz 11n -57dBm signal 58.5 Mb/s MCS 6 20 MHz long GI [bit 22] Data IV:df2d Pad 20 KeyID 0
+23:22:23.312225 416976591us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.312503 416976869us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.317533 416981896us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.317743 416982109us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.318463 416982828us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.319157 416983501us tsft 2412 MHz 11n -57dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df2e Pad 20 KeyID 0
+23:22:23.319164 416983509us tsft 2412 MHz 11n -57dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df2f Pad 20 KeyID 0
+23:22:23.338332 417002683us tsft 2412 MHz 11n -57dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df30 Pad 20 KeyID 0
+23:22:23.340072 417004437us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.345334 417009694us tsft 2412 MHz 11n -57dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df31 Pad 20 KeyID 0
+23:22:23.346525 417010887us tsft 2412 MHz 11n -57dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df32 Pad 20 KeyID 0
+23:22:23.347790 417012150us tsft 2412 MHz 11n -57dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df33 Pad 20 KeyID 0
+23:22:23.348451 417012814us tsft 24.0 Mb/s 2412 MHz 11g -54dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.355255 417019614us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.372087 417036396us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.372153 417036514us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.372320 417036679us tsft 2412 MHz 11n -57dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df34 Pad 20 KeyID 0
+23:22:23.375625 417039983us tsft 2412 MHz 11n -57dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df35 Pad 20 KeyID 0
+23:22:23.376980 417041314us tsft 2412 MHz 11n -58dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df36 Pad 20 KeyID 0
+23:22:23.376988 417041325us tsft 2412 MHz 11n -58dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df37 Pad 20 KeyID 0
+23:22:23.377375 417041737us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.378907 417043270us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.379171 417043535us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.383664 417048006us tsft 2412 MHz 11n -58dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df38 Pad 20 KeyID 0
+23:22:23.383671 417048017us tsft 2412 MHz 11n -58dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df39 Pad 20 KeyID 0
+23:22:23.393233 417057513us tsft 2412 MHz 11n -58dBm signal 72.2 Mb/s MCS 7 20 MHz short GI [bit 22] Data IV:df3a Pad 20 KeyID 0
+23:22:23.399629 417063962us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.406554 417070905us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.406824 417071189us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.413289 417077649us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.420315 417084672us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.420747 417085109us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.421566 417085932us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.422185 417086548us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.422666 417087030us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.445878 417110233us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.446112 417110476us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.446339 417110705us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.457650 417122006us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.504269 417168619us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.507646 417172013us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.507862 417172231us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.560065 417224415us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.576842 417241196us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.662510 417326798us tsft 1.0 Mb/s 2412 MHz 11b -51dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.668016 417332380us tsft 24.0 Mb/s 2412 MHz 11g -58dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.668263 417332631us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.679233 417343596us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.681131 417345498us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.691298 417355665us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.700253 417364618us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.708554 417372919us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.713306 417377671us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.713918 417378274us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.744791 417409153us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.764848 417429190us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.781638 417445997us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.802662 417467019us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.803719 417468082us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.867269 417531618us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.884038 417548396us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.894385 417558649us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.895009 417559371us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.895812 417560139us tsft 24.0 Mb/s 2412 MHz 11g -54dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.905081 417569420us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.969690 417634019us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.986446 417650798us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:23.994683 417659042us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:23.994992 417659356us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.002551 417666904us tsft 24.0 Mb/s 2412 MHz 11g -53dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.007471 417671824us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.072052 417736393us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.088842 417753198us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.109872 417774227us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.123352 417787692us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.174455 417838794us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.191245 417855598us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.209065 417873424us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.212269 417876628us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.242527 417906882us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.276851 417941194us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.300807 417965159us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.301056 417965385us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.317235 417981567us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.317855 417982215us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.322109 417986469us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.322563 417986925us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.339544 418003899us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.348038 418012395us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.348251 418012613us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.353252 418017607us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.353456 418017815us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.359336 418023698us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.360011 418024373us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.362243 418026581us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.362770 418027134us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.366120 418030477us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.367872 418032234us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.368680 418033024us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.369838 418034200us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.379261 418043613us tsft 1.0 Mb/s 2412 MHz 11b -52dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.396132 418060399us tsft 1.0 Mb/s 2412 MHz 11b -68dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.397771 418062110us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.398726 418063089us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.404451 418068813us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.404720 418069079us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.408926 418073292us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.409213 418073579us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.409823 418074190us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.410555 418074921us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.417248 418081591us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.488021 418152350us tsft 1.0 Mb/s 2412 MHz 11b -55dBm signal [bit 22] Probe Response (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:24.493225 418157575us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Probe Response (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] CH: 1, PRIVACY
+23:22:24.498514 418162873us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.553355 418217708us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.553569 418217929us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.572710 418237055us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.573540 418237902us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.574127 418238488us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.576670 418241010us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.577469 418241829us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] BA RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.578776 418243136us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.584072 418248424us tsft 1.0 Mb/s 2412 MHz 11b -50dBm signal [bit 22] Beacon (TOTOLINK_A720R) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.585794 418250150us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.600843 418265200us tsft 1.0 Mb/s 2412 MHz 11b -67dBm signal [bit 22] Beacon (AK110) [1.0* 2.0* 5.5* 11.0* 6.0 9.0 12.0 18.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.601092 418265454us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.601495 418265857us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.601724 418266085us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.604599 418268961us tsft 6.0 Mb/s 2412 MHz 11g -55dBm signal [bit 22] Request-To-Send TA:4a:fa:91:92:2b:19 (oui Unknown) 
+23:22:24.604681 418269021us tsft 6.0 Mb/s 2412 MHz 11g -66dBm signal [bit 22] Clear-To-Send RA:4a:fa:91:92:2b:19 (oui Unknown) 
+23:22:24.606012 418270373us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.606243 418270603us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.606973 418271335us tsft 24.0 Mb/s 2412 MHz 11g -56dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+23:22:24.621902 418286236us tsft 1.0 Mb/s 2412 MHz 11b -66dBm signal [bit 22] Beacon (Krystal_WiFi) [1.0* 2.0* 5.5* 11.0* 9.0 18.0 36.0 54.0 Mbit] ESS CH: 1, PRIVACY
+23:22:24.634754 418299110us tsft 24.0 Mb/s 2412 MHz 11g -57dBm signal [bit 22] Acknowledgment RA:ec:17:2f:e7:86:70 (oui Unknown) 
+
+995 packets captured
+1135 packets received by filter
+0 packets dropped by kernel
