@@ -38,16 +38,6 @@
 const char *ifn = "wlan1";
 
 pcap_dumper_t *filedumper = NULL;
-
-struct libwifi_radiotap_info rtap_info = {0};
-rtap_info.present = 0x0000002e;     // Flags, Rate, Channel, dBm Ant Signal
-rtap_info.channel.flags = 0x00a0;   // CCK, 2.4GHz (for channel 1)
-rtap_info.channel.freq = 2412;      // Channel 1 (2.4GHz)
-rtap_info.flags = 0x0000;           // No flags
-rtap_info.rate = 1;                 // 1 Mbit
-rtap_info.rate_raw = rtap_info.rate * 2; // 500kb/s increments
-rtap_info.signal = -20;             // Signal strength in dBm
-
  
 int get_if_index(const char *ifname) {
 	int sock = socket(AF_INET,SOCK_DGRAM,0);
@@ -127,7 +117,7 @@ void check_beacon(const unsigned char *packet, int len) {
 	// print packet content
 	printf("checking packet...\n");
 	printf("packet content:");
-	for(int i=0; i<buf_len; i++){
+	for(int i=0; i<len; i++){
 			printf("%c", packet[i]);
 		}
 	printf("\n");
@@ -252,7 +242,7 @@ int main()
 	size_t buf_len = libwifi_get_beacon_length(&beacon);
 	
 	// copy beacon frame into buffer
-	char *sendbuff = malloc(buf_len);
+	unsigned char *sendbuff = malloc(buf_len);
 	if (sendbuff == NULL){ printf("error allocate buffer"); }
 	memset(sendbuff,0,buf_len);
 	libwifi_dump_beacon(&beacon, sendbuff, buf_len);
@@ -262,6 +252,15 @@ int main()
 
 
 	// create radiotap
+	struct libwifi_radiotap_info rtap_info = {0};
+	rtap_info.present = 0x0000002e;     // Flags, Rate, Channel, dBm Ant Signal
+	rtap_info.channel.flags = 0x00a0;   // CCK, 2.4GHz (for channel 1)
+	rtap_info.channel.freq = 2412;      // Channel 1 (2.4GHz)
+	rtap_info.flags = 0x0000;           // No flags
+	rtap_info.rate = 1;                 // 1 Mbit
+	rtap_info.rate_raw = rtap_info.rate * 2; // 500kb/s increments
+	rtap_info.signal = -20;             // Signal strength in dBm
+
 	char *rtap = malloc(LIBWIFI_MAX_RADIOTAP_LEN);
 	if (rtap == NULL){ printf("error allocate rtap"); }
 	memset(rtap,0,LIBWIFI_MAX_RADIOTAP_LEN);
