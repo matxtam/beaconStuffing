@@ -1,0 +1,151 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <pcap/pcap.h>
+#include <netinet/tcp.h>
+#include <netinet/udp.h>
+#include <netinet/ip_icmp.h>
+
+int packets;
+const char *ifn = "wlan1";
+int count = 10;
+int has_radiotap = 1;
+
+pcap_t *handle;
+struct libwifi_bss bss = {0};
+
+void packet_handler(u_char *, const struct pcap_pkthdr *, const u_char *);
+void parse_radiotap(const struct libwifi_frame *);
+
+void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char *packet) {
+  unsigned long data_len = header->caplen;
+	unsigned char *data = (unsigned char *) packet;
+
+	// Initialise libwifi_frame struct
+	struct libwifi_frame frame = {0};
+	int ret = libwifi_get_wifi_frame(&frame, data, data_len, has_radiotap);
+	if (ret != 0) {
+		return;
+	}
+
+	parse_radiotap(&frame);
+	parse_beacon(frame, args, header, packet);
+
+	libwifi_free_bss(&bss);
+	libwifi_free_wifi_frame(&frame);
+}
+void parse_beacon(struct libwifi_frame frame, unsigned char *args, const struct pcap_pkthdr *header, const unsigned char *packet) {
+	if (frame.frame_control.type == TYPE_MANAGEMENT && frame.frame_control.subtype == SUBTYPE_BEACON) {
+		printf("Packet : %lu\n", packet_num);
+		int ret = libwifi_parse_beacon(&bss, &frame);
+		if (ret != 0) {
+			printf("Failed to parse beacon: %d\n", ret);
+			pcap_dump(args, header, packet);
+			return;
+		}
+
+		print_bss_info(&bss);
+	}
+}
+
+void print_bss_info(struct libwifi_bss *bss) {
+    if (bss == NULL) {
+        return;
+    }
+
+    printf("=== BSS Parsing ===\n");
+    printf("ESSID: %s\n", bss->hidden ? "(hidden)" : bss->ssid);
+    printf("BSSID: " MACSTR "\n", MAC2STR(bss->bssid));
+    printf("Receiver: " MACSTR "\n", MAC2STR(bss->receiver));
+    printf("Transmitter: " MACSTR "\n", MAC2STR(bss->transmitter));
+    printf("Channel: %d\n", bss->channel);
+    printf("WPS: %s\n", bss->wps ? "yes" : "no");
+
+    char sec_buf[LIBWIFI_SECURITY_BUF_LEN];
+
+    libwifi_get_security_type(bss, sec_buf);
+    printf("Encryption: %s\n", sec_buf);
+
+    libwifi_get_group_ciphers(bss, sec_buf);
+    printf("\tGroup Ciphers: %s\n", sec_buf);
+
+    libwifi_get_pairwise_ciphers(bss, sec_buf);
+    printf("\tPairwise Ciphers: %s\n", sec_buf);
+
+    libwifi_get_auth_key_suites(bss, sec_buf);
+    printf("\tAuth Key Suites: %s\n", sec_buf);
+
+    if (bss->rsn_info.rsn_capabilities & LIBWIFI_RSN_CAPAB_MFP_CAPABLE) {
+        printf("\tMFP Capable: Yes\n");
+    }
+    if (bss->rsn_info.rsn_capabilities & LIBWIFI_RSN_CAPAB_MFP_REQUIRED) {
+        printf("\tMFP Required: Yes\n");
+    }
+
+    if (bss->tags.length) {
+        printf("Tagged Parameters:\n");
+        print_tag_info(bss->tags.parameters, bss->tags.length);
+    } else {
+        printf("Tagged Parameters: None\n");
+    }
+
+    printf("=== BSS End ===\n");
+    printf("\n\n");
+}
+
+void parse_radiotap(const struct libwifi_frame *frame) {
+    const struct libwifi_radiotap_info *rtap_info = frame->radiotap_info;
+
+    printf("=== Radiotap Parsing ===\n");
+    printf("Radiotap Channel Freq: %d MHz\n", rtap_info->channel.freq);
+    printf("Radiotap Freq Band: ");
+    if (rtap_info->channel.band & LIBWIFI_RADIOTAP_BAND_2GHZ) {
+        printf("2.4 GHz\n");
+    } else if (rtap_info->channel.band & LIBWIFI_RADIOTAP_BAND_5GHZ) {
+        printf("5 GHz\n");
+    } else if (rtap_info->channel.band & LIBWIFI_RADIOTAP_BAND_6GHZ) {
+        printf("6 GHz\n");
+    } else {
+        printf("Unknown Band\n");
+    }
+    printf("Radiotap Channel: %d\n", rtap_info->channel.center);
+    printf("Radiotap Channel Flags: 0x%04x\n", rtap_info->channel.flags);
+    printf("Radiotap Rate: %.2f Mb/s\n", rtap_info->rate);
+    printf("Radiotap Rate Raw: 0x%02x\n", rtap_info->rate_raw);
+    printf("Radiotap Signal: %d dBm\n", rtap_info->signal);
+    for (int i = 0; i < rtap_info->antenna_count; i++) {
+  r      printf("Radiotap Antenna %d: %d dBm\n", rtap_info->antennas[i].antenna_number, rtap_info->antennas[i].signal);
+    }
+    printf("Radiotap Flags: 0x%04x\n", rtap_info->flags);
+    printf("Radiotap Extended Flags: 0x%08x\n", rtap_info->extended_flags);
+    printf("Radiotap RX Flags: 0x%04x\n", rtap_info->rx_flags);
+    printf("Radiotap TX Flags: 0x%04x\n", rtap_info->tx_flags);
+    printf("Radiotap TX Power: %d\n", rtap_info->tx_power);
+    printf("Radiotap RTS Retries: %d\n", rtap_info->rts_retries);
+    printf("Radiotap Data Retries: %d\n", rtap_info->data_retries);
+    printf("=== Radiotap End ===\n");
+}
+
+int main(){
+	// open a pcap handle
+	char errbuf[PCAP_ERRBUF_SIZE] = {0};
+	pcap_t *handle = pcap_open_live(ifn, BUFSIZ, 1, 1000, errbuf);
+	if (handle == NULL) {
+		fprintf(stderr, "Error opening device %s: %s\n", ifn, errbuf);
+		return -1;
+	}
+
+	// check datalink type
+	int dlt = pcap_datalink(handle);
+	printf("Data Link Type: %s\n", pcap_datalink_val_to_name(dlt));
+
+	// start capturing
+	if (pcap_loop(handle, count, packet_handler, (u_char *)NULL) < 0) {
+		fprintf(stderr, "Error capturing: %s\n", pcap_geterr(handle));
+		return -1;
+	}
+
+}
+
+
