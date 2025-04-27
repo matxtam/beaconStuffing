@@ -3,24 +3,22 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <pcap/pcap.h>
-#include <netinet/tcp.h>
-#include <netinet/udp.h>
-#include <netinet/ip_icmp.h>
 #include <libwifi.h>
+
+#define FILTER "type mgt subtype beacon"
 
 int packets;
 static unsigned long packet_num = 0;
 const char *ifn = "wlan1";
 int count = 10;
-int has_radiotap = 1;
-
+int has_radiotap;
+static struct bpf_program *filter;
 pcap_t *handle;
-struct libwifi_bss bss = {0};
 
 void packet_handler(u_char *, const struct pcap_pkthdr *, const u_char *);
+void parse_beacon(struct libwifi_frame, unsigned char *, const struct pcap_pkthdr *, const unsigned char *);
 void parse_radiotap(const struct libwifi_frame *);
 void print_bss_info(struct libwifi_bss *);
-void parse_beacon(struct libwifi_frame, unsigned char *, const struct pcap_pkthdr *, const unsigned char *);
 void print_tag_info(unsigned char *, size_t );
 
 void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char *packet) {
@@ -28,14 +26,15 @@ void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char
   unsigned long data_len = header->caplen;
 	unsigned char *data = (unsigned char *) packet;
 
-	// Initialise libwifi_frame struct
 	struct libwifi_frame frame = {0};
+	struct libwifi_bss bss = {0};
+
 	int ret = libwifi_get_wifi_frame(&frame, data, data_len, has_radiotap);
 	if (ret != 0) {
 		return;
 	}
 
-	parse_radiotap(&frame);
+	// parse_radiotap(&frame);
 	parse_beacon(frame, args, header, packet);
 
 	libwifi_free_bss(&bss);
@@ -167,8 +166,36 @@ int main(){
 	}
 
 	// check datalink type
-	int dlt = pcap_datalink(handle);
-	printf("Data Link Type: %s\n", pcap_datalink_val_to_name(dlt));
+	int linktype = pcap_datalink(handle);
+	if (linktype == DLT_IEEE802_11_RADIO) {
+		has_radiotap = 1;
+	} else if (linktype == DLT_IEEE802_11) {
+		got_radiotap = 0;
+	} else {
+		fprintf(stderr, "802.11 and radiotap headers not provided (%d)\n", pcap_datalink(handle));
+		pcap_close(handle);
+		exit(EXIT_FAILURE);
+	}
+
+	// apply filter
+	if ((filter = malloc(sizeof(struct bpf_program))) == NULL) {
+		perror("Malloc failure");
+		pcap_close(handle);
+		exit(EXIT_FAILURE);
+	}
+	printf("[*] Compiling and optimizing frame filter, this can take a second\n");
+	if (pcap_compile(handle, filter, FILTER, 0, 0) != 0) {
+		fprintf(stderr, "[!] Couldn't compile filter: %s\n", pcap_geterr(handle));
+		pcap_close(handle);
+		free(filter);
+		exit(EXIT_FAILURE);
+	}
+	if (pcap_setfilter(handle, filter) != 0) {
+		fprintf(stderr, "[!] Couldn't set filter: %s\n", pcap_geterr(handle));
+		pcap_close(handle);
+		free(filter);
+		exit(EXIT_FAILURE);
+	}
 
 	// start capturing
 	if (pcap_loop(handle, count, packet_handler, (u_char *)NULL) < 0) {
