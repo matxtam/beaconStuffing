@@ -18,6 +18,7 @@ pcap_t *handle;
 void packet_handler(u_char *, const struct pcap_pkthdr *, const u_char *);
 void parse_beacon(struct libwifi_frame, unsigned char *, const struct pcap_pkthdr *, const unsigned char *);
 void parse_radiotap(const struct libwifi_frame *);
+void find_stuffed_beacon(struct libwifi_bss *);
 void print_bss_info(struct libwifi_bss *);
 void print_tag_info(unsigned char *, size_t );
 
@@ -51,9 +52,47 @@ void parse_beacon(struct libwifi_frame frame, unsigned char *args, const struct 
 			return;
 		}
 
-		print_bss_info(&bss);
+		// print_bss_info(&bss);
+		find_stuffed_beacon(&bss);
 	}
 }
+
+void find_stuffed_beacon(struct libwifi_bss *bss) {
+	if (bss == NULL) {
+			return;
+	}
+
+	printf("ESSID: %s\n", bss->hidden ? "(hidden)" : bss->ssid);
+
+	if (bss->tags.length) {
+		printf("Tagged Parameters:\n");
+		struct libwifi_tag_iterator it;
+		if (libwifi_tag_iterator_init(&it, bss->tags.parameters, bss->tags.length) != 0) {
+				printf("couldn't initialise tag iterator\n");
+				return;
+		}
+		do {
+			printf("\ttag: %d (size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
+
+			int max_size = 16;
+			if (it.tag_header->tag_len < 16) {
+				max_size = it.tag_header->tag_len;
+			}
+			printf("\t%d bytes of tag data: ", max_size);
+			for (size_t i = 0; i < max_size; i++) {
+				printf("%02x ", it.tag_data[i]);
+			}
+			printf("\n");
+		} while (libwifi_tag_iterator_next(&it) != -1);
+
+	} else {
+			printf("Tagged Parameters: None\n");
+	}
+
+	printf("\n\n");
+}
+
+
 
 void print_bss_info(struct libwifi_bss *bss) {
     if (bss == NULL) {
