@@ -6,8 +6,10 @@
 #include <netinet/tcp.h>
 #include <netinet/udp.h>
 #include <netinet/ip_icmp.h>
+#include <libwifi.h>
 
 int packets;
+static unsigned long packet_num = 0;
 const char *ifn = "wlan1";
 int count = 10;
 int has_radiotap = 1;
@@ -17,8 +19,12 @@ struct libwifi_bss bss = {0};
 
 void packet_handler(u_char *, const struct pcap_pkthdr *, const u_char *);
 void parse_radiotap(const struct libwifi_frame *);
+void print_bss_info(struct libwifi_bss *);
+void parse_beacon(struct libwifi_frame, unsigned char *, const struct pcap_pkthdr *, const unsigned char *);
+void print_tag_info(unsigned char *, size_t );
 
 void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char *packet) {
+	++packet_num;
   unsigned long data_len = header->caplen;
 	unsigned char *data = (unsigned char *) packet;
 
@@ -35,6 +41,7 @@ void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char
 	libwifi_free_bss(&bss);
 	libwifi_free_wifi_frame(&frame);
 }
+
 void parse_beacon(struct libwifi_frame frame, unsigned char *args, const struct pcap_pkthdr *header, const unsigned char *packet) {
 	if (frame.frame_control.type == TYPE_MANAGEMENT && frame.frame_control.subtype == SUBTYPE_BEACON) {
 		printf("Packet : %lu\n", packet_num);
@@ -94,6 +101,27 @@ void print_bss_info(struct libwifi_bss *bss) {
     printf("\n\n");
 }
 
+void print_tag_info(unsigned char *data, size_t data_len) {
+    struct libwifi_tag_iterator it;
+    if (libwifi_tag_iterator_init(&it, data, data_len) != 0) {
+        printf("Couldn't initialise tag iterator\n");
+        return;
+    }
+    do {
+        printf("\tTag: %d (Size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
+
+        int max_size = 16;
+        if (it.tag_header->tag_len < 16) {
+            max_size = it.tag_header->tag_len;
+        }
+        printf("\t%d bytes of Tag Data: ", max_size);
+        for (size_t i = 0; i < max_size; i++) {
+            printf("%02x ", it.tag_data[i]);
+        }
+        printf("\n");
+    } while (libwifi_tag_iterator_next(&it) != -1);
+}
+
 void parse_radiotap(const struct libwifi_frame *frame) {
     const struct libwifi_radiotap_info *rtap_info = frame->radiotap_info;
 
@@ -115,7 +143,7 @@ void parse_radiotap(const struct libwifi_frame *frame) {
     printf("Radiotap Rate Raw: 0x%02x\n", rtap_info->rate_raw);
     printf("Radiotap Signal: %d dBm\n", rtap_info->signal);
     for (int i = 0; i < rtap_info->antenna_count; i++) {
-  r      printf("Radiotap Antenna %d: %d dBm\n", rtap_info->antennas[i].antenna_number, rtap_info->antennas[i].signal);
+        printf("Radiotap Antenna %d: %d dBm\n", rtap_info->antennas[i].antenna_number, rtap_info->antennas[i].signal);
     }
     printf("Radiotap Flags: 0x%04x\n", rtap_info->flags);
     printf("Radiotap Extended Flags: 0x%08x\n", rtap_info->extended_flags);
@@ -128,6 +156,8 @@ void parse_radiotap(const struct libwifi_frame *frame) {
 }
 
 int main(){
+	packet_num = 0;
+
 	// open a pcap handle
 	char errbuf[PCAP_ERRBUF_SIZE] = {0};
 	pcap_t *handle = pcap_open_live(ifn, BUFSIZ, 1, 1000, errbuf);
