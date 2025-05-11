@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <malloc.h>
+
+#define TAG_BODY_LEN 255
  
 int get_if_mac(const char *ifname, unsigned char mac[6]) {
 	// int sock = socket(AF_INET,SOCK_DGRAM,0);
@@ -162,7 +164,101 @@ void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len){
 }
 
 
-//todo: void bcstf_recv(void *, const char *);
+void packet_handler(u_char *recv, const struct pcap_pkthdr *header, const u_char *packet) {
+  unsigned long data_len = header->caplen;
+	unsigned char *data = (unsigned char *) packet;
+
+	struct libwifi_frame frame = {0};
+	struct libwifi_bss bss = {0};
+
+	int ret = libwifi_get_wifi_frame(&frame, data, data_len, 1);
+	if (ret != 0) {
+		return;
+	}
+
+	if (frame.frame_control.type == TYPE_MANAGEMENT && frame.frame_control.subtype == SUBTYPE_BEACON) {
+		int ret = libwifi_parse_beacon(&bss, &frame);
+		if (ret != 0) {
+			printf("Failed to parse beacon: %d\n", ret);
+			return;
+		}
+
+		find_stuffed_beacon(&bss, u_char *recv);
+	}
+
+	libwifi_free_bss(&bss);
+	libwifi_free_wifi_frame(&frame);
+}
+
+void find_stuffed_beacon(struct libwifi_bss *bss) {
+	if (bss == NULL) {
+			return;
+	}
+
+	printf("ESSID: %s\n", bss->hidden ? "(hidden)" : bss->ssid);
+
+	if (bss->tags.length) {
+
+		// initialize iterator
+		struct libwifi_tag_iterator it;
+		if (libwifi_tag_iterator_init(&it, bss->tags.parameters, bss->tags.length) != 0) {
+				printf("couldn't initialise tag iterator\n");
+				return;
+		}
+		struct libwifi_tag_iterator *vs_tags[bss->tags.length] = {0};
+		int vs_num = 0;
+
+		// iterate through all tags
+		do {
+			printf("\ttag #%d (size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
+
+			// if it is vender-specific tag, get the information
+			if(it.tag_header->tag_num == 221){
+				int max_size = TAG_BODY_LEN;
+				if (it.tag_header->tag_len < TAG_BODY_LEN) {
+					max_size = it.tag_header->tag_len;
+				}
+				printf("\t%d bytes: ", max_size);
+				for (size_t i = 0; i < max_size; i++) {
+					printf("%02x ", it.tag_data[i]);
+				}
+				printf("\n");
+
+				vs_tags[vs_num++] = it;
+			}
+
+		} while (libwifi_tag_iterator_next(&it) != -1);
+		size_t recv_len = (size_t)vs_num * TAG_BODY_LEN;
+		free(recv);
+		recv = malloc(recv_len);
+		if (recv == NULL) {
+			perror("malloc failed");
+		}
+		int i = 0;
+		while (i < vs_num){
+			memcpy(recv, vs_tags[i]->tag_data, vs_tags[i]->tag_len);
+			recv += TAG_BODY_LEN;
+			i++;
+		}
+
+	} else {
+		// no tag
+		printf("No tag\n");
+	}
+
+	printf("\n\n");
+}
+
+
+void bcstf_recv(bcstf_handle *handle, int count, unsigned char *recv){
+	// start capturing
+	if (pcap_loop(handle->pcaphandle, count, packet_handler, (u_char *)recv) < 0) {
+		fprintf(stderr, "Error capturing: %s\n", pcap_geterr(handle));
+		return -1;
+	}
+
+}
+
 void bcstf_close(bcstf_handle *handle){
 	pcap_close(handle->pcaphandle);
 	free(handle->frame);

@@ -11,7 +11,7 @@ typedef struct {
 
 bcstf_handle bcstf_create_handle(const char *, const char *);
 void bcstf_send(bcstf_handle *, unsigned char *, size_t);
-// void bcstf_recv(void *, const char *);
+void bcstf_recv(bcstf_handle *, int, unsigned char *);
 void bcstf_close(bcstf_handle *);
 
 #endif
