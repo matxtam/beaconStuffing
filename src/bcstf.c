@@ -8,6 +8,14 @@
 #include <string.h>
 #include <malloc.h>
 
+#include <unistd.h>             // close
+#include <sys/socket.h>         // socket
+#include <sys/ioctl.h>          // ioctl
+#include <net/if.h>             // struct ifreq, IFNAMSIZ
+#include <linux/if_packet.h>    // AF_PACKET, ETH_P_ALL
+#include <netinet/ether.h>      // ETH_P_ALL
+#include <arpa/inet.h>          // htons
+
 #define TAG_BODY_LEN 255
  
 int get_if_mac(const char *ifname, unsigned char mac[6]) {
@@ -48,23 +56,23 @@ bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
 
 	bcstf_handle ret;
 	// open a pcap handle
-	char errbuf[pcap_errbuf_size] = {1};
-	pcap_t *handle = pcap_open_live(device, bufsiz, 1, 1000, errbuf);
+	char errbuf[PCAP_ERRBUF_SIZE] = {1};
+	pcap_t *handle = pcap_open_live(device, BUFSIZ, 1, 1000, errbuf);
 	if (handle == NULL) {
 		fprintf(stderr, "error opening device %s: %s\n", device, errbuf);
-		return NULL;
+		return (bcstf_handle){0};
 	}
 	ret.pcaphandle = handle;
 
 	// check datalink type
 	int dlt = pcap_datalink(handle);
-	bool has_rtap = false;
+	int has_rtap = 0;
 	printf("Data Link Type: %s\n", pcap_datalink_val_to_name(dlt));
-	if (dlt == DLT_IEEE802_11_RADIO) has_rtap = true;
-	else if (dlt == DLT_IEEE802_11) has_rtap = false;
+	if (dlt == DLT_IEEE802_11_RADIO) has_rtap = 1;
+	else if (dlt == DLT_IEEE802_11) has_rtap = 0;
 	else{
     fprintf(stderr, "Data Link Type not supported\n");
-		return NULL;
+		return (bcstf_handle){0};
   }
 
 	// create beacon frame
@@ -131,7 +139,6 @@ bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
 		free(rtap);
 
 	} else {
-		bcstf_handle *ret = {0};
 		ret.frame = beaconbuff;
 		ret.frame_len = beacon_len;
 	}
@@ -150,8 +157,8 @@ void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len){
 
 	// collect original frame + frame
 	size_t offset = 0;
-	memcpy(buffer, rtap, rtap_len);
-	buffer += handle->frame_len;
+	memcpy(buffer, handle->frame, handle->frame_len);
+	offset += handle->frame_len;
 	buffer[offset++] = 0xDD;
 	buffer[offset++] = stuff_len+2;
 	memcpy(buffer+offset, stuff, stuff_len);
