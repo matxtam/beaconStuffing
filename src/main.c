@@ -1,18 +1,16 @@
-#include "bcstf.h"
-#include <string.h>  // for memset, strlen
-#include <unistd.h>  // for usleep
+#include "../bcstf/bcstf.h"
+
+void callback(unsigned char *recv, size_t recv_len, unsigned char *user){
+	for(int i=0; i<recv_len; i++){
+		printf("%02x ", recv[i]);
+	}
+	printf("\n");
+}
 
 int main() {
 	const char *device = "wlan1";
 	const char *ssid = "test";
 	bcstf_handle handle = bcstf_create_handle(device, ssid);
-	int i = 1451;
-	char str[i+1]; 
-	memset(str, 'a', i);
-	str[i] = '\0';
-	printf("string length = %lu\n", strlen(str));
-	for (int j=0; j<100; j++){
-		bcstf_send(&handle, (unsigned char *)str, strlen(str));
-		usleep(200 * 1000);
-	}
+	bcstf_recv(&handle, 10, callback, NULL);
+	bcstf_close(&handle);
 }

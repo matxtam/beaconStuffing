@@ -17,6 +17,13 @@
 #include <arpa/inet.h>          // htons
 
 #define TAG_BODY_LEN 255
+
+typedef struct {
+	void (*callback)(unsigned char *, size_t, unsigned char *);
+	unsigned char * user;
+} recv_callbacks;
+int get_if_mac(const char *ifname, unsigned char mac[6]);
+void packet_handler(u_char *user, const struct pcap_pkthdr *header, const u_char *packet);
  
 int get_if_mac(const char *ifname, unsigned char mac[6]) {
 	// int sock = socket(AF_INET,SOCK_DGRAM,0);
@@ -171,7 +178,9 @@ void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len){
 }
 
 
-void packet_handler(u_char *recv, const struct pcap_pkthdr *header, const u_char *packet) {
+void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u_char *packet) {
+	recv_callbacks *ctx = (recv_callbacks *)pcap_user;
+
   unsigned long data_len = header->caplen;
 	unsigned char *data = (unsigned char *) packet;
 
@@ -184,69 +193,67 @@ void packet_handler(u_char *recv, const struct pcap_pkthdr *header, const u_char
 	}
 
 	if (frame.frame_control.type == TYPE_MANAGEMENT && frame.frame_control.subtype == SUBTYPE_BEACON) {
-		int ret = libwifi_parse_beacon(&bss, &frame);
+	
+	int ret = libwifi_parse_beacon(&bss, &frame);
 		if (ret != 0) {
 			printf("Failed to parse beacon: %d\n", ret);
 			return;
 		}
 
-		find_stuffed_beacon(&bss, u_char *recv);
-	}
+		// find stuffed item
+		printf("ESSID: %s\n", bss.hidden ? "(hidden)" : bss.ssid);
 
-	libwifi_free_bss(&bss);
-	libwifi_free_wifi_frame(&frame);
-}
+		if (bss.tags.length) {
 
-void find_stuffed_beacon(struct libwifi_bss *bss) {
-	if (bss == NULL) {
-			return;
-	}
-
-	printf("ESSID: %s\n", bss->hidden ? "(hidden)" : bss->ssid);
-
-	if (bss->tags.length) {
-
-		// initialize iterator
-		struct libwifi_tag_iterator it;
-		if (libwifi_tag_iterator_init(&it, bss->tags.parameters, bss->tags.length) != 0) {
-				printf("couldn't initialise tag iterator\n");
-				return;
-		}
-		struct libwifi_tag_iterator *vs_tags[bss->tags.length] = {0};
-		int vs_num = 0;
-
-		// iterate through all tags
-		do {
-			printf("\ttag #%d (size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
-
-			// if it is vender-specific tag, get the information
-			if(it.tag_header->tag_num == 221){
-				int max_size = TAG_BODY_LEN;
-				if (it.tag_header->tag_len < TAG_BODY_LEN) {
-					max_size = it.tag_header->tag_len;
-				}
-				printf("\t%d bytes: ", max_size);
-				for (size_t i = 0; i < max_size; i++) {
-					printf("%02x ", it.tag_data[i]);
-				}
-				printf("\n");
-
-				vs_tags[vs_num++] = it;
+			// initialize iterator
+			struct libwifi_tag_iterator it;
+			if (libwifi_tag_iterator_init(&it, bss.tags.parameters, bss.tags.length) != 0) {
+					printf("couldn't initialise tag iterator\n");
+					return;
 			}
 
-		} while (libwifi_tag_iterator_next(&it) != -1);
-		size_t recv_len = (size_t)vs_num * TAG_BODY_LEN;
-		free(recv);
-		recv = malloc(recv_len);
-		if (recv == NULL) {
-			perror("malloc failed");
-		}
-		int i = 0;
-		while (i < vs_num){
-			memcpy(recv, vs_tags[i]->tag_data, vs_tags[i]->tag_len);
-			recv += TAG_BODY_LEN;
-			i++;
-		}
+			// record vender-specific tags (there may be many)
+			struct libwifi_tag_iterator *vs_tags = calloc(bss.tags.length, sizeof(struct libwifi_tag_iterator));
+			int vs_num = 0;
+			size_t recv_len = 0;
+
+			// iterate through all tags
+			do {
+				printf("\ttag #%d (size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
+
+				// if it is a vender-specific tag, print the information
+				if(it.tag_header->tag_num == 221){
+					int max_size = TAG_BODY_LEN;
+					if (it.tag_header->tag_len < TAG_BODY_LEN) {
+						max_size = it.tag_header->tag_len;
+					}
+					printf("\t%d bytes: ", max_size);
+					for (size_t i = 0; i < max_size; i++) {
+						printf("%02x ", it.tag_data[i]);
+					}
+					printf("\n");
+
+					// record the vender-specific tag
+					vs_tags[vs_num++] = it;
+					recv_len += max_size;
+				}
+			} while (libwifi_tag_iterator_next(&it) != -1);
+
+			// save the vender-specific tags into recv
+			u_char *recv;
+			recv = malloc(recv_len);
+			if (recv == NULL) {
+				perror("recv: malloc failed\n");
+			}
+			int i = 0;
+			unsigned char *recv_ptr = recv;
+			while (i < vs_num){
+				memcpy(recv_ptr, vs_tags[i].tag_data, vs_tags[i].tag_header->tag_len);
+				recv_ptr += vs_tags[i].tag_header->tag_len;
+				i++;
+			}
+
+			ctx->callback(recv, recv_len, ctx->user);
 
 	} else {
 		// no tag
@@ -254,14 +261,29 @@ void find_stuffed_beacon(struct libwifi_bss *bss) {
 	}
 
 	printf("\n\n");
+
+	}
+
+
+	libwifi_free_bss(&bss);
+	libwifi_free_wifi_frame(&frame);
 }
 
+void bcstf_recv(
+bcstf_handle *handle, 
+int count, 
+void (*callback)(unsigned char *, size_t, unsigned char *), 
+unsigned char *user){
+	// initialzie user
+	recv_callbacks pcap_user = {
+		.callback = callback,
+		.user = user,
+	};
 
-void bcstf_recv(bcstf_handle *handle, int count, unsigned char *recv){
 	// start capturing
-	if (pcap_loop(handle->pcaphandle, count, packet_handler, (u_char *)recv) < 0) {
-		fprintf(stderr, "Error capturing: %s\n", pcap_geterr(handle));
-		return -1;
+	if (pcap_loop(handle->pcaphandle, count, packet_handler, (u_char *)(&pcap_user)) < 0) {
+		fprintf(stderr, "Error capturing: %s\n", pcap_geterr(handle->pcaphandle));
+		return;
 	}
 
 }
