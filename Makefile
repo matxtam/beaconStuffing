@@ -3,15 +3,19 @@ CFLAGS = -Wall -Werror -O3
 LDFLAGS = -lwifi -lpcap
 
 # Default target
-all: main
+all: send recv
 
-# Build the main executable by linking object files
-main: main.o bcstf.o
-	$(CC) $(CFLAGS) -o main main.o bcstf.o $(LDFLAGS)
+send: send.o bcstf.o
+	$(CC) $(CFLAGS) -o send send.o bcstf.o $(LDFLAGS)
 
-# Compile main.o from main.c
-main.o: ./src/main.c ./bcstf/bcstf.h
-	$(CC) $(CFLAGS) -c ./src/main.c -o main.o
+recv: recv.o bcstf.o
+	$(CC) $(CFLAGS) -o recv recv.o bcstf.o $(LDFLAGS)
+
+send.o: ./src/send.c ./bcstf/bcstf.h
+	$(CC) $(CFLAGS) -c ./src/send.c -o send.o
+
+recv.o: ./src/recv.c ./bcstf/bcstf.h
+	$(CC) $(CFLAGS) -c ./src/recv.c -o recv.o
 
 # Compile bcstf.o from bcstf.c
 bcstf.o: ./bcstf/bcstf.c ./bcstf/bcstf.h
@@ -19,4 +23,4 @@ bcstf.o: ./bcstf/bcstf.c ./bcstf/bcstf.h
 
 # Clean built files
 clean:
-	rm -f main *.o
+	rm -f send recv *.o
