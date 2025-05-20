@@ -19,4 +19,4 @@ bcstf.o: ./bcstf/bcstf.c ./bcstf/bcstf.h
 
 # Clean built files
 clean:
-	rm -f main main.o bcstf.o
+	rm -f main *.o

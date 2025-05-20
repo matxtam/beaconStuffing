@@ -1,3 +1,2 @@
 libwifi
-send.o
-sniff.o
+*.o

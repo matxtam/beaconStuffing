@@ -16,7 +16,7 @@
 #include <netinet/ether.h>      // ETH_P_ALL
 #include <arpa/inet.h>          // htons
 
-#define TAG_BODY_LEN 255
+#define	MAX_TAG_LEN 255
 
 typedef struct {
 	void (*callback)(unsigned char *, size_t, unsigned char *);
@@ -155,20 +155,29 @@ bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
 void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len){
 
 	// allocate new buffer
-	size_t total_len = handle->frame_len + 2 + stuff_len;
+	size_t total_len = handle->frame_len + 2*(stuff_len/MAX_TAG_LEN + 1) + stuff_len;
 	unsigned char *buffer = malloc(total_len);
 	if(buffer == NULL){
 		printf("error allocate buffer");
 		return;
 	}
 
-	// collect original frame + frame
-	size_t offset = 0;
 	memcpy(buffer, handle->frame, handle->frame_len);
-	offset += handle->frame_len;
-	buffer[offset++] = 0xDD;
-	buffer[offset++] = stuff_len+2;
-	memcpy(buffer+offset, stuff, stuff_len);
+	size_t offset = handle->frame_len;
+
+	// collect original frame + frame
+	int i;
+	for(i=stuff_len; i>MAX_TAG_LEN; i-=MAX_TAG_LEN){
+		buffer[offset++] = 0xDD;
+		buffer[offset++] = MAX_TAG_LEN;
+		memcpy(buffer+offset, stuff+(stuff_len-i), MAX_TAG_LEN);
+		offset += MAX_TAG_LEN;
+	}
+	if (i > 0){
+		buffer[offset++] = 0xDD;
+		buffer[offset++] = i;
+		memcpy(buffer+offset, stuff+(stuff_len-i), i);
+	}
 
 	// send the packet
 	if (pcap_sendpacket(handle->pcaphandle, buffer, total_len) != 0) {
@@ -223,8 +232,8 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 
 				// if it is a vender-specific tag, print the information
 				if(it.tag_header->tag_num == 221){
-					int max_size = TAG_BODY_LEN;
-					if (it.tag_header->tag_len < TAG_BODY_LEN) {
+					int max_size = MAX_TAG_LEN;
+					if (it.tag_header->tag_len < MAX_TAG_LEN) {
 						max_size = it.tag_header->tag_len;
 					}
 					printf("\t%d bytes: ", max_size);
