@@ -28,7 +28,6 @@ void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char
 	unsigned char *data = (unsigned char *) packet;
 
 	struct libwifi_frame frame = {0};
-	struct libwifi_bss bss = {0};
 
 	int ret = libwifi_get_wifi_frame(&frame, data, data_len, has_radiotap);
 	if (ret != 0) {
@@ -38,11 +37,11 @@ void packet_handler(u_char *args, const struct pcap_pkthdr *header, const u_char
 	// parse_radiotap(&frame);
 	parse_beacon(frame, args, header, packet);
 
-	libwifi_free_bss(&bss);
 	libwifi_free_wifi_frame(&frame);
 }
 
 void parse_beacon(struct libwifi_frame frame, unsigned char *args, const struct pcap_pkthdr *header, const unsigned char *packet) {
+	struct libwifi_bss bss = {0};
 	if (frame.frame_control.type == TYPE_MANAGEMENT && frame.frame_control.subtype == SUBTYPE_BEACON) {
 		printf("Packet : %lu\n", packet_num);
 		int ret = libwifi_parse_beacon(&bss, &frame);
@@ -55,6 +54,7 @@ void parse_beacon(struct libwifi_frame frame, unsigned char *args, const struct 
 		// print_bss_info(&bss);
 		find_stuffed_beacon(&bss);
 	}
+	libwifi_free_bss(&bss);
 }
 
 void find_stuffed_beacon(struct libwifi_bss *bss) {
@@ -209,7 +209,7 @@ int main(){
 	if (linktype == DLT_IEEE802_11_RADIO) {
 		has_radiotap = 1;
 	} else if (linktype == DLT_IEEE802_11) {
-		got_radiotap = 0;
+		has_radiotap = 0;
 	} else {
 		fprintf(stderr, "802.11 and radiotap headers not provided (%d)\n", pcap_datalink(handle));
 		pcap_close(handle);

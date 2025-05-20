@@ -1,3 +1,4 @@
+=======
 #include "bcstf.h"
 
 #include <pcap.h>
@@ -228,7 +229,8 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 
 			// iterate through all tags
 			do {
-				printf("\ttag #%d (size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
+				if(strcmp(bss.ssid, "test") == 0)
+					printf("\ttag #%d (size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
 
 				// if it is a vender-specific tag, print the information
 				if(it.tag_header->tag_num == 221){
@@ -236,11 +238,11 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 					if (it.tag_header->tag_len < MAX_TAG_LEN) {
 						max_size = it.tag_header->tag_len;
 					}
-					printf("\t%d bytes: ", max_size);
-					for (size_t i = 0; i < max_size; i++) {
-						printf("%02x ", it.tag_data[i]);
-					}
-					printf("\n");
+					// printf("\t%d bytes: ", max_size);
+					//for (size_t i = 0; i < max_size; i++) {
+					//	printf("%02x ", it.tag_data[i]);
+					//}
+					//printf("\n");
 
 					// record the vender-specific tag
 					vs_tags[vs_num++] = it;
@@ -262,7 +264,7 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 				i++;
 			}
 
-			ctx->callback(recv, recv_len, ctx->user);
+			if(strcmp(bss.ssid, "test") == 0)ctx->callback(recv, recv_len, ctx->user);
 
 	} else {
 		// no tag
