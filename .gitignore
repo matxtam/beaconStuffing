@@ -1,3 +1,4 @@
 libwifi
 *.o
-main
+send
+recv

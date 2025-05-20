@@ -19,15 +19,15 @@ sudo make install
 cd ../..
 ```
 
-## Run the Files
+## Run the test file
 Run sender
 ``` bash
 make send
-sudo ./send.o
+sudo ./send <length_of_bits>
 ```
-Run sniffer
+Run receiver
 ```bash
-make sniff
-sudo ./sniff.o
+make recv
+sudo ./recv
 ```
 
