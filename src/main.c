@@ -1,6 +1,7 @@
 #include "../bcstf/bcstf.h"
 
 void callback(unsigned char *recv, size_t recv_len, unsigned char *user){
+	printf("receive length: %zu\ndata: ", recv_len);
 	for(int i=0; i<recv_len; i++){
 		printf("%02x ", recv[i]);
 	}
