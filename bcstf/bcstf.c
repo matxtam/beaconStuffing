@@ -5,6 +5,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <string.h>
 #include <malloc.h>
 
@@ -59,17 +60,18 @@ int get_if_mac(const char *ifname, unsigned char mac[6]) {
 
 
 
-bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
+bcstf_handle *bcstf_create_handle(const char *device, const char *ssid){
 
-	bcstf_handle ret;
+	bcstf_handle *ret = malloc(sizeof(bcstf_handle));
+
 	// open a pcap handle
 	char errbuf[PCAP_ERRBUF_SIZE] = {1};
 	pcap_t *handle = pcap_open_live(device, BUFSIZ, 1, 1000, errbuf);
 	if (handle == NULL) {
 		fprintf(stderr, "error opening device %s: %s\n", device, errbuf);
-		return (bcstf_handle){0};
+		return NULL;
 	}
-	ret.pcaphandle = handle;
+	ret->pcaphandle = handle;
 
 	// check datalink type
 	int dlt = pcap_datalink(handle);
@@ -79,7 +81,7 @@ bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
 	else if (dlt == DLT_IEEE802_11) has_rtap = 0;
 	else{
     fprintf(stderr, "Data Link Type not supported\n");
-		return (bcstf_handle){0};
+		return NULL;
   }
 
 	// create beacon frame
@@ -88,7 +90,8 @@ bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
 	// TX mac
 	unsigned char mac_tx[6] = {0};
 	if(get_if_mac(device, mac_tx) != 0){
-		printf("get mac error");
+		fprintf(stderr, "Cannot get mac\n");
+		return NULL;
 	}
 
 	// RX mac (broadcast)
@@ -98,11 +101,13 @@ bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
 	struct libwifi_beacon beacon = {0};
 	libwifi_create_beacon(&beacon, mac_rx, mac_tx, mac_tx, ssid, 1);
 
-	size_t beacon_len = libwifi_get_beacon_length(&beacon);
-	
 	// copy beacon frame into buffer
+	size_t beacon_len = libwifi_get_beacon_length(&beacon);
 	unsigned char *beaconbuff = malloc(beacon_len);
-	if(beaconbuff == NULL) printf("error allocate buffer");
+	if(beaconbuff == NULL){
+		fprintf(stderr, "error allocate beacon buffer\n");
+		return NULL;
+	}
 	memset(beaconbuff,0,beacon_len);
 	libwifi_dump_beacon(&beacon, beaconbuff, beacon_len);
 
@@ -118,15 +123,18 @@ bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
 		rtap_info.signal = -20;             // Signal strength in dBm
 
 		char *rtap = malloc(LIBWIFI_MAX_RADIOTAP_LEN);
-		if (rtap == NULL){ printf("error allocate rtap"); }
+		if (rtap == NULL){
+			fprintf(stderr, "error allocate rtap buffer\n");
+			return NULL;
+		}
 		memset(rtap,0,LIBWIFI_MAX_RADIOTAP_LEN);
 		
 		int rtap_len = libwifi_create_radiotap(&rtap_info, rtap);
 		if (rtap_len == -1) {
-			 fprintf(stderr, "Error generating radiotap header\n");
+			 fprintf(stderr, "error generating radiotap header\n");
 			 free(rtap);
 			 free(beaconbuff);
-			 exit(EXIT_FAILURE);
+			 return NULL;
 		}
 
 		// combine radiotap and beacon frame
@@ -136,19 +144,20 @@ bcstf_handle bcstf_create_handle(const char *device, const char *ssid){
 			perror("malloc failed");
 			free(rtap);
 			free(beaconbuff);
-			exit(EXIT_FAILURE);
+			return NULL;
 		}
 		memcpy(frame, rtap, rtap_len);
 		memcpy(frame + rtap_len, beaconbuff, beacon_len);
-		ret.frame = frame;
-		ret.frame_len = rtap_len + beacon_len;
+		ret->frame = frame;
+		ret->frame_len = rtap_len + beacon_len;
 		free(beaconbuff);
 		free(rtap);
 
 	} else {
-		ret.frame = beaconbuff;
-		ret.frame_len = beacon_len;
+		ret->frame = beaconbuff;
+		ret->frame_len = beacon_len;
 	}
+
 	return ret;
 }
 
@@ -158,8 +167,8 @@ void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len){
 	size_t total_len = handle->frame_len + 2*(stuff_len/MAX_TAG_LEN + 1) + stuff_len;
 	unsigned char *buffer = malloc(total_len);
 	if(buffer == NULL){
-		printf("error allocate buffer");
-		return;
+		fprintf(stderr, "error allocate buffer");
+		return false;
 	}
 
 	memcpy(buffer, handle->frame, handle->frame_len);
@@ -182,8 +191,9 @@ void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len){
 	// send the packet
 	if (pcap_sendpacket(handle->pcaphandle, buffer, total_len) != 0) {
 		fprintf(stderr, "Error sending packet: %s\n", pcap_geterr(handle->pcaphandle));
-		return;
+		return false;
 	}
+	return true;
 }
 
 
