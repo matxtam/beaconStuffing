@@ -161,7 +161,7 @@ bcstf_handle *bcstf_create_handle(const char *device, const char *ssid){
 	return ret;
 }
 
-void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len){
+void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len, int count, int interval_us){
 
 	// allocate new buffer
 	size_t total_len = handle->frame_len + 2*(stuff_len/MAX_TAG_LEN + 1) + stuff_len;
@@ -189,9 +189,12 @@ void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len){
 	}
 
 	// send the packet
-	if (pcap_sendpacket(handle->pcaphandle, buffer, total_len) != 0) {
-		fprintf(stderr, "Error sending packet: %s\n", pcap_geterr(handle->pcaphandle));
-		return false;
+	for (int i=0; i<count; i++){
+		if (pcap_sendpacket(handle->pcaphandle, buffer, total_len) != 0) {
+			fprintf(stderr, "Error sending packet: %s\n", pcap_geterr(handle->pcaphandle));
+			return false;
+		}
+		usleep(interval_us);
 	}
 	return true;
 }
@@ -208,14 +211,16 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 
 	int ret = libwifi_get_wifi_frame(&frame, data, data_len, 1);
 	if (ret != 0) {
+		fprintf(stderr, "error getting wifi frame\n");
 		return;
 	}
 
 	if (frame.frame_control.type == TYPE_MANAGEMENT && frame.frame_control.subtype == SUBTYPE_BEACON) {
 	
-	int ret = libwifi_parse_beacon(&bss, &frame);
+		// parse the beacon
+		int ret = libwifi_parse_beacon(&bss, &frame);
 		if (ret != 0) {
-			printf("Failed to parse beacon: %d\n", ret);
+			fprintf(stderr, "Failed to parse beacon: %d\n", ret);
 			return;
 		}
 
@@ -227,7 +232,7 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 			// initialize iterator
 			struct libwifi_tag_iterator it;
 			if (libwifi_tag_iterator_init(&it, bss.tags.parameters, bss.tags.length) != 0) {
-					printf("couldn't initialise tag iterator\n");
+					fprintf(stderr, "couldn't initialise tag iterator\n");
 					return;
 			}
 
@@ -238,20 +243,15 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 
 			// iterate through all tags
 			do {
-				if(strcmp(bss.ssid, "test") == 0)
-					printf("\ttag #%d (size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
+				// todo: filter
+				// printf("\ttag #%d (size: %d)\n", it.tag_header->tag_num, it.tag_header->tag_len);
 
-				// if it is a vender-specific tag, print the information
+				// if it is a vender-specific tag, get the information
 				if(it.tag_header->tag_num == 221){
 					int max_size = MAX_TAG_LEN;
 					if (it.tag_header->tag_len < MAX_TAG_LEN) {
 						max_size = it.tag_header->tag_len;
 					}
-					// printf("\t%d bytes: ", max_size);
-					//for (size_t i = 0; i < max_size; i++) {
-					//	printf("%02x ", it.tag_data[i]);
-					//}
-					//printf("\n");
 
 					// record the vender-specific tag
 					vs_tags[vs_num++] = it;
@@ -263,7 +263,8 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 			u_char *recv;
 			recv = malloc(recv_len);
 			if (recv == NULL) {
-				perror("recv: malloc failed\n");
+				fprintf(stderr, "error allocate recv\n");
+				return;
 			}
 			int i = 0;
 			unsigned char *recv_ptr = recv;
@@ -273,27 +274,25 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 				i++;
 			}
 
-			if(strcmp(bss.ssid, "test") == 0)ctx->callback(recv, recv_len, ctx->user);
+			bcstf_info info = { 
+				.ssid = bss.ssid, 
+			};
 
-	} else {
-		// no tag
-		printf("No tag\n");
+			ctx->callback(recv, recv_len, info, ctx->user);
+
+		}
 	}
-
-	printf("\n\n");
-
-	}
-
 
 	libwifi_free_bss(&bss);
 	libwifi_free_wifi_frame(&frame);
 }
 
-void bcstf_recv(
+bool bcstf_recv(
 bcstf_handle *handle, 
 int count, 
-void (*callback)(unsigned char *, size_t, unsigned char *), 
+void (*callback)(unsigned char *, size_t, bcstf_info, unsigned char *), 
 unsigned char *user){
+
 	// initialzie user
 	recv_callbacks pcap_user = {
 		.callback = callback,
@@ -303,9 +302,9 @@ unsigned char *user){
 	// start capturing
 	if (pcap_loop(handle->pcaphandle, count, packet_handler, (u_char *)(&pcap_user)) < 0) {
 		fprintf(stderr, "Error capturing: %s\n", pcap_geterr(handle->pcaphandle));
-		return;
+		return false;
 	}
-
+	return true;
 }
 
 void bcstf_close(bcstf_handle *handle){

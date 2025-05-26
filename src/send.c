@@ -5,11 +5,11 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
+	// turn argv into int
 	if (argc != 2) {
 		fprintf(stderr, "Usage: %s <length>\n", argv[0]);
 		return 1;
 	}
-
 	int i = atoi(argv[1]);
 	if (i <= 0 || i > 2048) {
 		fprintf(stderr, "Invalid length: %d (must be between 1 and 2048)\n", i);
@@ -24,8 +24,5 @@ int main(int argc, char *argv[]) {
 	memset(str, 'a', i);
 	str[i] = '\0';
 	printf("string length = %lu\n", strlen(str));
-	for (int j=0; j<100; j++){
-		bcstf_send(&handle, (unsigned char *)str, strlen(str));
-		usleep(200 * 1000);
-	}
+	bcstf_send(&handle, (unsigned char *)str, strlen(str), 100, 200*1000);
 }

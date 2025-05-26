@@ -1,9 +1,12 @@
 #include "../bcstf/bcstf.h"
+#include <string.h>
 
-void callback(unsigned char *recv, size_t recv_len, unsigned char *user){
-	printf("receive length: %zu\ndata: ", recv_len);
-	for(int i=0; i<recv_len; i++){
-		printf("%02x ", recv[i]);
+void callback(unsigned char *recv, size_t recv_len, bcstf_info info, unsigned char *user){
+	if(strcmp(info.ssid, "test") == 0){
+		printf("receive length: %zu\ndata: ", recv_len);
+		for(int i=0; i<recv_len; i++){
+			printf("%02x ", recv[i]);
+		}
 	}
 }
 
