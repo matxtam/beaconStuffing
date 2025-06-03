@@ -2,3 +2,4 @@ libwifi
 *.o
 send
 recv
+**/main

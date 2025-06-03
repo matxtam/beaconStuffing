@@ -57,6 +57,7 @@ void *send_t(void *_arg){
 }
 
 void callback(unsigned char *recv, size_t recv_len, bcstf_info info, unsigned char *user){
+	// printf("Receive from ssid: \"%s\"\n", info.ssid);
 	if(strcmp(info.ssid, "test") == 0){
 		printf("Receive a ");
 		struct msg *m = buf2msg(recv);

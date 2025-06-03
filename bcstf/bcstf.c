@@ -20,7 +20,7 @@
 #define	MAX_TAG_LEN 255
 
 typedef struct {
-	void (*callback)(unsigned char *, size_t, unsigned char *);
+	void (*callback)(unsigned char *, size_t, bcstf_info, unsigned char *);
 	unsigned char * user;
 } recv_callbacks;
 int get_if_mac(const char *ifname, unsigned char mac[6]);
@@ -161,7 +161,7 @@ bcstf_handle *bcstf_create_handle(const char *device, const char *ssid){
 	return ret;
 }
 
-void bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len, int count, int interval_us){
+bool bcstf_send(bcstf_handle *handle, unsigned char *stuff, size_t stuff_len, int count, int interval_us){
 
 	// allocate new buffer
 	size_t total_len = handle->frame_len + 2*(stuff_len/MAX_TAG_LEN + 1) + stuff_len;
@@ -225,15 +225,15 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 		}
 
 		// find stuffed item
-		printf("ESSID: %s\n", bss.hidden ? "(hidden)" : bss.ssid);
+		// printf("ESSID: %s\n", bss.hidden ? "(hidden)" : bss.ssid);
 
 		if (bss.tags.length) {
 
 			// initialize iterator
 			struct libwifi_tag_iterator it;
 			if (libwifi_tag_iterator_init(&it, bss.tags.parameters, bss.tags.length) != 0) {
-					fprintf(stderr, "couldn't initialise tag iterator\n");
-					return;
+				fprintf(stderr, "couldn't initialize tag iterator\n");
+				return;
 			}
 
 			// record vender-specific tags (there may be many)
@@ -274,11 +274,10 @@ void packet_handler(u_char *pcap_user, const struct pcap_pkthdr *header, const u
 				i++;
 			}
 
-			bcstf_info info = { 
-				.ssid = bss.ssid, 
-			};
+			bcstf_info *info = malloc(sizeof(bcstf_info));
+			strncpy(info->ssid, bss.ssid, 32);
 
-			ctx->callback(recv, recv_len, info, ctx->user);
+			ctx->callback(recv, recv_len, *info, ctx->user);
 
 		}
 	}
