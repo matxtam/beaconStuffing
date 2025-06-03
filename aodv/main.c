@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <stdbool.h>
+#define TABLE_LEN 10
 
 struct send_arg {
 	bcstf_handle *handle;
@@ -21,6 +22,19 @@ struct msg {
 	char to[6];
 };
 
+struct entry {
+	char from[6];
+	char to[6];
+};
+
+struct callback_user {
+	char name[6];
+	bcstf_handle *handle;
+};
+
+struct entry table[TABLE_LEN] = {0};
+int table_index = 0;
+
 void *msg2buf(struct msg *m){
 	void *buf = malloc(sizeof(struct msg));
 	if (!buf) return NULL;
@@ -33,6 +47,25 @@ struct msg *buf2msg(void *buf) {
 	if (!m) return NULL;
 	memcpy(m, buf, sizeof(struct msg));
 	return m;
+}
+
+bool is_in_table(char *from, char*to){
+	for (int i=0; i<table_index; i++){
+		if((strcmp(from, table[i].from) == 0) && (strcmp(to, table[i].to) == 0)){
+			return true;
+		}
+	}
+	return false;
+}
+
+void table_insert(char *from, char *to){
+	table_index++;
+	if(table_index == TABLE_LEN){
+		printf("table index exceed max len\n");
+		return;
+	}
+	strcpy(table[table_index-1].from, from);
+	strcpy(table[table_index-1].to, to);
 }
 
 void *send_t(void *_arg){
@@ -56,26 +89,47 @@ void *send_t(void *_arg){
 	}
 }
 
-void callback(unsigned char *recv, size_t recv_len, bcstf_info info, unsigned char *user){
+void callback(unsigned char *recv, size_t recv_len, bcstf_info info, unsigned char *_user){
 	// printf("Receive from ssid: \"%s\"\n", info.ssid);
+	struct callback_user *user = (struct callback_user*)_user;
+	
 	if(strcmp(info.ssid, "test") == 0){
-		printf("Receive a ");
+		printf("Receive ");
 		struct msg *m = buf2msg(recv);
 		if(m->type == RREQ)printf("RREQ: ");
 		if(m->type == RREP)printf("RREP: ");
-		printf("\n\tfrom: %s", m->from);
-		printf("\n\tto: %s", m->to);
+		printf("\t%s -> %s", m->from, m->to);
 
-		// discard RREQ
-		// resend RREQ
-		// send RREP
+		// ignore RREQ
+		if(is_in_table(m->from, m->to)){
+			printf("\tIgnore (recorded path)\n");
+		} else if(strcmp(m->from, (const char *)user->name) == 0){
+			printf("\tIgnore (origin is myself)\n");
+		} else {
+			table_insert(m->from, m->to);
 
-		for(int i=0; i<recv_len; i++){
-			printf("%02x ", recv[i]);
+			// prepare to send a message
+			struct msg *ms = malloc(sizeof(struct msg));
+			memcpy(ms->from, m->from, 6);
+			memcpy(ms->to, m->to, 6);
+
+			if(strcmp((const char *)user->name, m->to) == 0){
+				// send RREP
+				ms->type = RREP;
+				void *buf = msg2buf(ms);
+				printf("\tSend RREP\n");
+				bcstf_send(user->handle, (unsigned char *)buf, sizeof(struct msg), 3, 200*1000);
+
+			} else {
+				// resend
+				ms->type = m->type;
+				void *buf = msg2buf(ms);
+				printf("\tResend\n");
+				bcstf_send(user->handle, (unsigned char *)buf, sizeof(struct msg), 3, 200*1000);
+			}
 		}
 	}
 }
-
 
 
 int main(int argc, char *argv[]) {
@@ -104,6 +158,9 @@ int main(int argc, char *argv[]) {
 	pthread_t send_thread;
 	pthread_create(&send_thread, NULL, send_t, (void *)arg);
 
-	bcstf_recv(handle, -1, callback, NULL);
+	struct callback_user *user = malloc(sizeof(struct callback_user));
+	user->handle = handle;
+	strcpy(user->name, name);
+	bcstf_recv(handle, -1, callback, (unsigned char*)user);
 	bcstf_close(handle);
 }
