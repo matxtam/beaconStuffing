@@ -85,7 +85,7 @@ bcstf_handle *bcstf_create_handle(const char *device, const char *ssid){
   }
 
 	// create beacon frame
-	printf("Creating Beacon Frame...\n");
+	// printf("Creating Beacon Frame...\n");
 
 	// TX mac
 	unsigned char mac_tx[6] = {0};

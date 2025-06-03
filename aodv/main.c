@@ -76,6 +76,10 @@ void *send_t(void *_arg){
 		// read a string
 		scanf("%6s", dest);
 		
+		if(strcmp(dest, arg->name) == 0){
+			printf("destination = myself\n");
+			continue;
+		}
 		// convert the string to msg buffer
 		struct msg *m = malloc(sizeof(struct msg));
 		m->type = RREQ;
